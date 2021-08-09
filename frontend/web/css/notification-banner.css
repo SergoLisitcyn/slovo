@@ -1,0 +1,55 @@
+.notification_banner {
+  background: rgba(125,197,135,0.85);
+  position: fixed;
+  bottom: 5%;
+  right: 0;
+  left: 0;
+  width: 80vw;
+  z-index: 100;
+  padding: 10px;
+  margin: auto;
+}
+
+.notification_banner p {
+  margin: 0;
+  padding: 0;
+}
+
+.notification_banner a {
+  color: inherit;
+  text-decoration: underline;
+}
+
+.notification_banner__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.notification_banner__content {
+  margin-right: 15px;
+  text-align: center;
+  color: white;
+}
+
+.notification_banner__close_icon {
+  cursor: pointer;
+  font-family: monospace;
+  border: none;
+  text-decoration: none;
+  font-size: 1.5rem;
+  width: 1.5rem;
+  height: 1.5rem;
+  color: white;
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.notification_banner__close_icon:hover {
+  transform: scale(1.2);
+}
