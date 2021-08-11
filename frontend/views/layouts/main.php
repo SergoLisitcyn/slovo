@@ -16,6 +16,19 @@ AppAsset::register($this);
 <!DOCTYPE html>
 <html lang="<?= Yii::$app->language ?>">
 <head>
+    <title>Микрокредиты в Казахстане через интернет в онлайн-сервисе «Честное слово» - ТОО «МФО «Akshabar»</title>
+    <META NAME="description" CONTENT="Срочно взять онлайн микрокредит в онлайн-сервисе «Честное слово»">
+    <meta name="Keywords" content="микрозайм, взять микрозайм, микрозайм онлайн, взять микрозайм онлайн, микрозайм денег, взять микрозайм через интернет, микрокредиты в Казахстане, кредит ">
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <meta name="robots" content="noyaca"/>
+    <meta name="robots" content="noodp"/>
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <link rel="icon" type="image/png" href="favicon.png" />
+
+    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+    <link rel="apple-touch-icon" sizes="76x76" href="apple-touch-icon-ipad.png" />
+    <link rel="apple-touch-icon" sizes="120x120" href="apple-touch-icon-iphone-retina.png" />
+    <link rel="apple-touch-icon" sizes="152x152" href="apple-touch-icon-ipad-retina.png" />
     <meta charset="<?= Yii::$app->charset ?>">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -56,24 +69,41 @@ AppAsset::register($this);
             <ul class="menu menu-right">
                 <li><a href="usloviya/index.html" class="f">Условия</a></li>
                 <li><a href="privileges/index.html">Постоянным клиентам</a></li>
-                <li><a href="faq/index.html">FAQ</a></li>
+                <li><a href="/page/protection-of-consumer-rights">FAQ</a></li>
             </ul>
             <ul class="menu menu-left">
-                <li><a href="kak-poluchit-zaym/index.html" class="f">Как получить деньги</a></li>
-                <li><a href="vozvrat-zaima/index.html">Как погасить микрокредит</a></li>
+                <li><a href="/page/kak-poluchit-zaym" class="f">Как получить деньги</a></li>
+                <li><a href="/page/vozvrat-zaima">Как погасить микрокредит</a></li>
             </ul>
             <div class="personal">
                 <ul>
                     <li class="first">
-                        <a href="user.html">Войти</a>
+                        <a href="https://lk.4slovo.kz/">Войти</a>
                     </li>
                 </ul>
                 <div class="icon"></div>
             </div>
-            <div class="phones">
+            <div class="phones feedback">
+
                 <ul>
                     <li class="first tooltip-anchor">
-                        <a href="contact_mfo/index.html">Обратная связь</a>
+                        <a href="https://4slovo.kz/contact_mfo/open.php">Обратная связь</a>
+                    </li>
+                </ul>
+                <div class="icon"></div>
+            </div>
+            <div class="phones phone">
+                <ul>
+                    <li class="first tooltip-anchor">
+                        <a href="tel:+77273393404">+7 (727) 3393404</a>
+                    </li>
+                </ul>
+                <div class="icon"></div>
+            </div>
+            <div class="phones email">
+                <ul>
+                    <li class="first tooltip-anchor">
+                        <a href="mailto:mfo@4slovo.kz">mfo@4slovo.kz</a>
                     </li>
                 </ul>
                 <div class="icon"></div>
@@ -121,24 +151,28 @@ AppAsset::register($this);
 
 
             <div class="phones">
-                <strong><a href="contact/open.php.html">Клиентская поддержка:</a></strong>
+                <strong><a href="https://4slovo.kz/contact/open.php">Клиентская поддержка:</a></strong>
                 <div>+7 (727) 3393404</div>
                 <a href="mailto:mfo@4slovo.kz">mfo@4slovo.kz</a>
             </div>
 
             <ul class="menu">
-                <li><a href="about/index.html">О компании</a></li>
-                <li><a href="blog/index.html">Блог</a></li>
-                <li><a href="actions/index.html">Акции</a></li>
-                <li><a href="news/index.html">Новости</a></li>
+                <li><a href="/page/about">О компании</a></li>
+                <li><a href="/page/requisitions">Реквизиты</a></li>
+                <li><a href="page/pravila">Правила</a></li>
+                <li><a href="page/usloviya">Соглашение на обработку персональных данных</a></li>
+                <li><a href="page/usluga">Услуга консультирования</a></li>
+                <li><a href="blog">Блог</a></li>
+                <li><a href="actions">Акции</a></li>
+                <li><a href="news">Новости</a></li>
                 <li><a href="press/index.html">СМИ о нас</a></li>
-                <li><a href="usloviya/index.html">Условия</a></li>
-                <li><a href="kak-poluchit-zaym/index.html">Как получить деньги</a></li>
-                <li><a href="vozvrat-zaima/index.html">Как погасить микрокредит</a></li>
-                <li><a href="faq/index.html">Вопросы и ответы</a></li>
+                <li><a href="/page/kak-poluchit-zaym">Как получить деньги</a></li>
+                <li><a href="/page/vozvrat-zaima">Как погасить микрокредит</a></li>
+                <li><a href="/page/protection-of-consumer-rights">Вопросы и ответы</a></li>
                 <li><a href="privileges/index.html">Постоянным клиентам</a></li>
                 <li><a href="partners/index.html">Партнерам</a></li>
                 <li><a href="friends/index.html">Приглашайте друзей</a></li>
+                <li><a href="usloviya/index.html">Условия</a></li>
             </ul>
 
             <div class="social">Мы в социальных сетях —
@@ -160,7 +194,7 @@ AppAsset::register($this);
 
     <div class="width-wrapper">
         <ul class="how-its-done2">
-            <li><a href="protection-of-consumer-rights/index.html"><img alt="" src="images/shield.png" /></a></li>
+            <li><a href="https://4slovo.kz/protection-of-consumer-rights/"><img alt="" src="images/shield.png" /></a></li>
             <li><img alt="" src="/images/visa.png" /></li>
             <li><img alt="" src="/images/visa2.png" /></li>
             <li><img alt="" src="/images/mastercard.png" /></li>

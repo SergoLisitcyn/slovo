@@ -293,6 +293,23 @@ img {
 	font-size: 16px; margin: 0; line-height: 1.5;
 	position: absolute; top: 101px; right: 0;
 }
+.header .phones.phone {
+	top: 136px;
+}
+.header .phones.email {
+	top: 171px;
+}
+.header .phones.feedback .icon {
+	background: #fff url(../images/icon-contact.png) no-repeat 50% 50%;
+}
+.header .phones.phone .icon {
+	background: #fff url(../images/icon-phone-header.png) no-repeat 50% 50%;
+	background-size: 28px;
+}
+.header .phones.email .icon {
+	background: #fff url(../images/icon-email.png) no-repeat 50% 50%;
+	background-size: 28px;
+}
 .header .phones strong {
 	color: #ffffff;
 	font-size: 18px; line-height: 1;
@@ -308,8 +325,7 @@ img {
 
 .header .phones .icon {
 	height: 33px; width: 36px;
-	background: #fff url(../images/icon-contact.png) no-repeat 50% 50%;
-	position: absolute; top: 0; right: 120px;
+	position: absolute; top: 0; right: 134px;
 	padding: 0; margin: 0;
 
 	-webkit-border-bottom-left-radius: 5px;
@@ -323,7 +339,7 @@ img {
 .header .phones .icon-disabled {
 	height: 33px; width: 36px;
 	background: #fff url(../images/icon-contact-disabled.png) no-repeat 50% 50%;
-	position: absolute; top: 0; right: 120px;
+	position: absolute; top: 0; right: 134px;
 	padding: 0; margin: 0;
 
 	-webkit-border-bottom-left-radius: 5px;
@@ -351,7 +367,7 @@ img {
 	height: 15px; padding: 9px 15px;
 }
 .header .phones ul li.first {
-	height: 15px; padding: 9px 15px;
+	width: 119px; height: 15px; padding: 9px 10px 9px 15px;
 }
 .header .phones ul li a {
 	color: black;
@@ -1010,12 +1026,12 @@ ul.how-its-done2 img {
 }
 
 .footer-height-wrapper {
-	height: 325px !important;
+	height: 360px !important;
 }
 
 .footer .social {
 	position: absolute; right: 0; text-align: right;
-	top: 185px;
+	top: 220px;
 }
 
 .footer .social a {
@@ -1028,7 +1044,7 @@ ul.how-its-done2 img {
 }
 
 .footer .copy {
-	position: absolute; right: 0; top: 220px; text-align: right;
+	position: absolute; right: 0; top: 260px; text-align: right;
 }
 
 .footer-menu-wrapper {
@@ -1040,11 +1056,13 @@ ul.how-its-done2 img {
 	position: absolute; right: 0; top: 130px;
 	font-size: 15px; line-height: 2;
 	padding: 0; margin: 0;
+	text-align: justify;
 }
 .footer ul.menu li {
 	list-style: none;
 	display: inline-block;
-	margin: 0 0 0 13px;
+	margin: 0 0 0 18px;
+	text-align: justify;
 }
 .footer ul.menu li a {
 	color: #404041;
@@ -1651,4 +1669,36 @@ x-shelf-tizer:after {
 @keyframes promo-swing {
 	0% { transform: rotate(3deg); }
 	100% { transform: rotate(-3deg); }
+}
+
+#t75 {
+	position: absolute;
+	left: 45%;
+	top: 210px;
+	color: #fff;
+	z-index: 80;
+	width: 1000px;
+	margin: 0 0 0 -350px;
+	padding: 7px 0;
+	text-align: center;
+}
+
+#t75 .h1 {
+	color: white;
+	font-family: "PT Sans", sans-serif;
+	font-size: 36px;
+	font-weight: bold;
+	margin: 0;
+	line-height: 1.1;
+	text-shadow: 0 2px 5px rgb(0 0 0 / 17%);
+}
+#t75 .h2 {
+	color: white;
+	font-family: "Georgia", serif;
+	font-size: 22px;
+	font-weight: normal;
+	font-style: italic;
+	margin: 10px 0;
+	line-height: 1.1;
+	text-shadow: 0 1px 3px rgb(0 0 0 / 17%);
 }
