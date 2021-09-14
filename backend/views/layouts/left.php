@@ -20,8 +20,18 @@
                 'items' => [
                     ['label' => 'Навигация', 'options' => ['class' => 'header']],
                     ['label' => 'Главная страница', 'icon' => 'fa fa-cog', 'url' => ['/main-page/update?id=1']],
+                    ['label' => 'Настройка калькулятора', 'icon' => 'cog', 'url' => ['/calculator/update?id=1']],
                     ['label' => 'Создание страниц', 'icon' => 'file-code-o', 'url' => ['/pages']],
                     ['label' => 'Меню', 'icon' => 'dashboard', 'url' => ['/menu']],
+                    [
+                        'label' => 'Страница отказа',
+                        'icon' => 'book',
+                        'url' => '#',
+                        'items' => [
+                            ['label' => 'Предложения', 'icon' => 'newspaper-o', 'url' => ['/partners/index'],],
+                            ['label' => 'Текст страницы', 'icon' => 'paper-plane', 'url' => ['/otkaz-page/update?id=1'],],
+                        ],
+                    ],
                     [
                         'label' => 'Рубрики',
                         'icon' => 'share',

@@ -1,0 +1,30 @@
+.accept{
+    position:relative;
+    width:100%;
+}
+.accept input[type=checkbox]{
+    display:none;
+    visibility:hidden;
+    opacity:0
+}
+.accept input[type=checkbox]+label{
+    display:block;
+    position:relative;
+    cursor:pointer;
+    padding-left:35px;
+    line-height:24px;
+    text-align:left;
+    font-size:18px
+}
+.accept input[type=checkbox]+label:before{
+    content:'';
+    position:absolute;
+    width:24px;
+    height:24px;
+    top:0;
+    left:0;
+    background:url(../img_register/checkbox.svg) no-repeat 50% 50%
+}
+.accept input[type=checkbox]:checked+label:before{
+    background:url(../img_register/checked.svg) no-repeat 50% 50%
+}

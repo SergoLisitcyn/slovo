@@ -1,0 +1,181 @@
+.text--center {
+    text-align: center;
+ }
+
+.text--main_color {
+    color: #7FC489;
+}
+
+.text--dark_color {
+    color: #4A4A4A;
+}
+
+.text--alarm_color {
+    color: #F16565;
+}
+
+.text--info_color {
+    color: #979797;
+}
+
+.text--border_dashed {
+    border: 1px dashed;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 8px 16px;
+}
+
+.text--border_solid {
+    border: 1px solid;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 8px 16px;
+}
+
+.text--border_radius {
+    border-radius: 3px;
+}
+
+.text--border_main_color {
+    border-color: #7FC489;
+}
+
+.text--border_info_color {
+    border-color: #979797;
+}
+
+.text--border_alarm_color {
+    border-color: #F16565;
+}
+
+.text--regular {
+    font-weight: normal;
+}
+
+.text--light {
+    font-weight: 300;
+}
+
+.text--bold {
+    font-weight: bold;
+}
+
+.text--demibold {
+    font-weight: 400;
+}
+
+.text--underline {
+    text-decoration: underline;
+}
+
+.text--margin_bottom {
+    margin-bottom: 10px;
+}
+
+.text--margin_bottom {
+    margin-bottom: 10px;
+}
+
+.text--margin_bottom_4 {
+    margin-bottom: 4px;
+}
+
+.text--margin_bottom_8 {
+    margin-bottom: 8px;
+}
+
+.text--margin_bottom_16 {
+    margin-bottom: 16px;
+}
+
+.text--margin_bottom_24 {
+    margin-bottom: 24px;
+}
+
+.text--margin_bottom_32 {
+    margin-bottom: 32px;
+}
+
+.text--margin_left_20 {
+    margin-left: 20px;
+}
+
+.text--margin_top {
+    margin-top: 10px;
+}
+
+.text--margin_top_4 {
+    margin-top: 4px;
+}
+
+.text--margin_top_8 {
+    margin-top: 8px;
+}
+
+.text--margin_top_16 {
+    margin-top: 16px;
+}
+
+.text--margin_top_20 {
+    margin-top: 20px;
+}
+
+.text--margin_top_24 {
+    margin-top: 24px;
+}
+
+.text--margin_top_32 {
+    margin-top: 32px;
+}
+
+.text--little {
+    font-size: 12px;
+}
+
+.text--large {
+    font-size: 18px;
+}
+
+.text--xlarge {
+    font-size: 24px;
+}
+
+.text--xxlarge {
+    font-size: 28px;
+}
+
+.text--center {
+    text-align: center;
+}
+
+.text--uppercase {
+    text-transform: uppercase;
+}
+
+.text--padding-24-16 {
+    padding: 24px 16px;
+}
+
+.text--padding-0-8 {
+    padding: 0 8px;
+}
+
+.text--line {
+    border-bottom: 1px solid #F2F2F2;
+}
+
+.text--line-dotted {
+    border-bottom: 1px dotted #F2F2F2;
+}
+
+.text--block {
+    display: block;
+}
+
+.text--vertical_middle {
+    vertical-align: middle;
+}
+
+body{
+    font-family: "PT Sans", sans-serif !important;
+}

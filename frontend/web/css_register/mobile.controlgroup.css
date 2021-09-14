@@ -1,0 +1,254 @@
+.mobile_form_wrapper {
+  margin: auto;
+  display: flex;
+  justify-content: center;
+}
+
+.mobile-control-group label {
+  display: block;
+  font-size: 18px;
+  line-height: 20px;
+  padding: 5px 16px;
+  color: #808080;
+}
+.mobile-control-group .help-inline,
+.mobile-control-group .help-inline-long {
+  font-size: 14px;
+  margin: -8px 16px 8px;
+  display: block;
+  color: #808080;
+}
+.mobile-control-group .help-inline-alone,
+.mobile-control-group .help-inline-long-alone {
+  margin-top: 8px;
+}
+.mobile-control-group.error .help-inline {
+  color: red;
+}
+.mobile-control-group.checkbox-short {
+  height: 40px;
+  line-height: 40px;
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+.mobile-control-group.checkbox-short label {
+  vertical-align: middle;
+}
+.mobile_content input[type=checkbox] {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  margin-left: 16px;
+  vertical-align: top;
+  margin-bottom: 8px;
+}
+.mobile_content input[type=checkbox] + label {
+  color: black;
+  display: inline-block;
+  width: 216px;
+  box-sizing: border-box;
+  font-size: 14px;
+  vertical-align: top;
+  padding-top: 0;
+  line-height: 15px;
+}
+.mobile_content input[type=text],
+.mobile_content input[type=email],
+.mobile_content input[type=tel],
+.mobile_content input[type=password],
+.mobile_content input[type=date],
+.mobile_content input[type=number],
+.mobile_content input[type=datetime],
+.mobile_content input[type=datetime-local],
+.mobile_content select,
+.mobile_content .fileinput-button {
+  color: black;
+  font-size: 18px;
+  height: 40px;
+  line-height: 40px;
+  padding: 0 14px;
+  width: 256px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  margin: 0 16px 10px;
+  background-color: white;
+  box-sizing: content-box;
+  display: inline-block;
+}
+@media screen and (min-width: 445px) and (max-width: 600px) {
+  .mobile_content input[type=text],
+  .mobile_content input[type=email],
+  .mobile_content input[type=tel],
+  .mobile_content input[type=password],
+  .mobile_content input[type=date],
+  .mobile_content input[type=number],
+  .mobile_content input[type=datetime],
+  .mobile_content input[type=datetime-local],
+  .mobile_content select,
+  .mobile_content .fileinput-button {
+      width: 290px;
+  }
+  .mobile_content input[type=checkbox] + label {
+    width: 250px;
+  }
+}
+.mobile-control-group.error input[type=text],
+.mobile-control-group.error input[type=email],
+.mobile-control-group.error input[type=tel],
+.mobile-control-group.error input[type=password],
+.mobile-control-group.error input[type=date],
+.mobile-control-group.error input[type=number],
+.mobile-control-group.error input[type=datetime],
+.mobile-control-group.error input[type=datetime-local],
+.mobile-control-group.error select,
+.mobile-control-group.error .fileinput-button {
+  border-color: red;
+  background-color: #fffeaf !important;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+.mobile-control-group.error input[type=text]:focus,
+.mobile-control-group.error input[type=email]:focus,
+.mobile-control-group.error input[type=tel]:focus,
+.mobile-control-group.error input[type=password]:focus,
+.mobile-control-group.error input[type=date]:focus,
+.mobile-control-group.error input[type=number]:focus,
+.mobile-control-group.error input[type=datetime]:focus,
+.mobile-control-group.error input[type=datetime-local]:focus,
+.mobile-control-group.error select:focus,
+.mobile-control-group.error .fileinput-button:focus {
+  background-color: white !important;
+  color: black;
+}
+.mobile_content input[type=text].disabled,
+.mobile_content input[type=email].disabled,
+.mobile_content input[type=tel].disabled,
+.mobile_content input[type=password].disabled,
+.mobile_content input[type=date].disabled,
+.mobile_content input[type=number].disabled,
+.mobile_content input[type=datetime].disabled,
+.mobile_content input[type=datetime-local].disabled,
+.mobile_content select.disabled,
+.mobile_content .fileinput-button.disabled {
+  background: #eee;
+}
+.mobile-control-group.green input[type=text],
+.mobile-control-group.green input[type=email],
+.mobile-control-group.green input[type=tel],
+.mobile-control-group.green input[type=password],
+.mobile-control-group.green input[type=date],
+.mobile-control-group.green input[type=number],
+.mobile-control-group.green input[type=datetime],
+.mobile-control-group.green input[type=datetime-local],
+.mobile-control-group.green select {
+  color: #389f46;
+}
+.mobile-control-group.green input[type=text]:-webkit-autofill,
+.mobile-control-group.green input[type=email]:-webkit-autofill,
+.mobile-control-group.green input[type=tel]:-webkit-autofill,
+.mobile-control-group.green input[type=password]:-webkit-autofill,
+.mobile-control-group.green input[type=date]:-webkit-autofill,
+.mobile-control-group.green input[type=number]:-webkit-autofill,
+.mobile-control-group.green input[type=datetime]:-webkit-autofill,
+.mobile-control-group.green input[type=datetime-local]:-webkit-autofill,
+.mobile-control-group.green select:-webkit-autofill {
+  -webkit-box-shadow: 0 0 13px -1px #81c38b, 0 0 0 1000px white inset;
+  /*  background-color: white !important; */
+  color: #389f46 !important;
+}
+.mobile_content input[type=text]:focus,
+.mobile_content input[type=email]:focus,
+.mobile_content input[type=tel]:focus,
+.mobile_content input[type=password]:focus,
+.mobile_content input[type=date]:focus,
+.mobile_content input[type=number]:focus,
+.mobile_content input[type=datetime]:focus,
+.mobile_content input[type=datetime-local]:focus,
+.mobile_content select:focus,
+.mobile-control-group.green input[type=text],
+.mobile-control-group.green input[type=email],
+.mobile-control-group.green input[type=tel],
+.mobile-control-group.green input[type=password],
+.mobile-control-group.green input[type=date],
+.mobile-control-group.green input[type=number],
+.mobile-control-group.green input[type=datetime],
+.mobile-control-group.green input[type=datetime-local],
+.mobile-control-group.green select {
+  -webkit-box-shadow: 0 0 13px -1px #81c38b;
+  -moz-box-shadow: 0 0 13px -1px #81c38b;
+  box-shadow: 0 0 13px -1px #81c38b;
+  border-color: #81c38b;
+}
+.mobile-control-group.green .seven {
+  color: #389f46;
+}
+.mobile-control-group.datepicker .mobile-controls {
+  display: flex;
+}
+
+.mobile-control-group.datepicker select {
+  padding: 0;
+  flex: 1 1;
+  box-sizing: border-box;
+}
+  
+.mobile-submit-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  width: 100%;
+  padding: 16px;
+}
+.help-button,
+.next-button {
+  width: 288px;
+  padding: 16px;
+}
+.big-button {
+  width: 288px;
+  border: 0;
+  border-radius: 3px;
+  font-size: 18px;
+  line-height: 18px;
+  height: 48px;
+  padding: 15px 5px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.big-button-green,
+.big-button .bbg {
+  background: #81c38b;
+  background: linear-gradient(to bottom, #81c38b 0%, #81c38b 50%, #489952 100%);
+  color: white;
+}
+.promo .big-button-green,
+.promo .big-button .bbg {
+  margin: 0 16px 10px;
+}
+
+/*.mobile-controls{*/
+/*  display: inline-block;*/
+/*  vertical-align: top;*/
+/*  position: relative;*/
+/*}*/
+
+.form-label {
+  position: absolute;
+  pointer-events: none;
+  left: 15px;
+  right: 15px;
+  top: 7px;
+  white-space: nowrap;
+  overflow: hidden;
+  line-height: 40px;
+  transition: .3s;
+  font-weight: 500;
+}
+
+.formfield:focus~.form-label {
+  top: -8px;
+  font-size: 12px;
+}
+

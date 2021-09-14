@@ -1,0 +1,129 @@
+.custom-icon-vk,
+.custom-icon-ok,
+.custom-icon-mail-gray-bottom,
+.custom-icon-mail,
+.custom-icon-menu,
+.custom-icon-vk-bottom,
+.custom-icon-ok-bottom,
+.custom-icon-fb-bottom,
+.custom-icon-inst-bottom {
+  vertical-align: middle;
+  width: 48px;
+  height: 48px;
+  background: url(/img_register/mobile/icons.png) no-repeat;
+  display: inline-block;
+}
+.custom-icon-ok {
+  background-position: 0 0;
+}
+.custom-icon-vk {
+  background-position: -48px 0;
+}
+.custom-icon-mail-gray {
+  background-position: -96px 0;
+}
+.custom-icon-menu {
+  background-position: -144px 0;
+}
+.custom-icon-mail {
+  background-position: -192px 0;
+}
+.custom-icon-vk-bottom {
+  width: 32px;
+  height: 32px;
+  background-position: -56px -8px;
+}
+.custom-icon-ok-bottom {
+  width: 32px;
+  height: 32px;
+  background-position: -8px -8px;
+}
+.custom-icon-fb-bottom {
+  width: 32px;
+  height: 32px;
+  background-position: -245px -8px;
+}
+.custom-icon-inst-bottom {
+  width: 32px;
+  height: 32px;
+  background-position: -290px -8px;
+}
+.custom-icon-mail-gray-bottom {
+  width: 32px;
+  height: 32px;
+  background-position: -104px -8px;
+}
+ul.mobile__nav-top {
+  width: 100%;
+  background: #81c38b;
+}
+ul.mobile__nav-top li {
+  list-style: none;
+  width: 100%;
+  color: black;
+  height: 50px;
+  background: #81c38b;
+}
+ul.mobile__nav-top li a {
+  display: block;
+  padding-top: 10px;
+  line-height: 40px;
+  height: 40px;
+  font-size: 18px;
+  font-weight: 500;
+  text-align: center;
+  text-decoration: none;
+  color: black;
+}
+ul.mobile__nav-top li a:visited {
+  color: black;
+}
+ul.mobile__nav-top li:last-child {
+  height: 60px;
+}
+ul.mobile__nav-top li:last-child a {
+  padding-bottom: 10px;
+}
+
+.mobile__menu-button {
+  margin-left: 16px;
+  float: left;
+}
+.mobile__mail-button {
+  margin-right: 16px;
+  float: right;
+}
+img.mobile__logo {
+  display: block;
+  margin: 0 auto;
+}
+
+.mobile__header {
+  display: none;
+}
+
+.mobile__divider {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.width-wrapper {
+  width: 950px;
+  margin: 0 auto;
+  position: relative;
+}
+
+
+@media screen and (max-width: 600px) {
+  .mobile__header {
+    display: block;
+  }
+  header.header-desktop-wrapper {
+    display: none;
+  }
+  .content {
+    position: relative;
+    padding: 0;
+    margin: 0;
+  }
+}

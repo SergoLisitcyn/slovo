@@ -1,7 +1,11 @@
 <?php
 namespace frontend\controllers;
 
+use common\models\Calculator;
 use common\models\MainPage;
+use common\models\OtkazPage;
+use common\models\Partners;
+use common\models\Settings;
 use frontend\models\ResendVerificationEmailForm;
 use frontend\models\VerifyEmailForm;
 use Yii;
@@ -76,8 +80,39 @@ class SiteController extends Controller
     public function actionIndex()
     {
         $mainPage = MainPage::findOne(1);
+        $settings = Calculator::findOne(1);
+        $settingsRate = (isset($settings->rate) and !empty($settings->rate)) ? floatval($settings->rate) : 0.0019;
+        $condition = [
+            "id" => 1,
+            "ruleViolationPercent" => 2.81,
+            "amountMin" => intval($settings->min_amount),
+            "amountMax" => intval($settings->amount),
+            "termMin" => intval($settings->min_term),
+            "termMax" => intval($settings->term),
+            "rate" => $settingsRate,
+            "amountStep" => intval($settings->amount_step),
+            "termStep" => intval($settings->term_step),
+            "product" => 1
+        ];
+
+        $conditions[] = $condition;
+
         return $this->render('index', [
             'mainPage' => $mainPage,
+            'conditions' => $conditions,
+            'settingsRate' => $settingsRate
+        ]);
+    }
+
+    public function actionCredit()
+    {
+        $this->layout = 'main-register';
+        $partners = Partners::find()->where(['status' => 1])->orderBy(['sort' => SORT_ASC])->asArray()->all();
+        $otkazPage = OtkazPage::findOne(1);
+
+        return $this->render('credit', [
+            'otkazPage' => $otkazPage,
+            'partners' => $partners
         ]);
     }
 

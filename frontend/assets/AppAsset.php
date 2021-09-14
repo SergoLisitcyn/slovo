@@ -17,6 +17,13 @@ class AppAsset extends AssetBundle
         'css/many.css',
     ];
     public $js = [
+        'js_register/test.js',
+        'js_register/scripts.min.js',
+        'js_register/iincheck.min.js',
+        'js_register/mobile_menu_slide.js',
+        'js_register/bootstrap.min.js',
+        'js_register/syncStateManager.js',
+        'js_register/modal.js'
 //        'js/minified.css',
 //        'css/notification-banner.css',
     ];

@@ -1,0 +1,123 @@
+.mobile_slider_container {
+    display: block;
+    position: relative;
+    width: 100%;
+    padding: 16px;
+}
+
+.component-mobile_pickvalue {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin: auto;
+    max-width: 400px;
+ }
+
+.mobile_pickvalue {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin: auto;
+    max-width: 400px;
+ }
+  
+.mobile_pickvalue__minus {
+    display: inline-block; }
+  
+.mobile_pickvalue__minus:active > .icon {
+    background-size: 95%;
+    background-position: center; }
+  
+.mobile_pickvalue__plus {
+    display: inline-block; }
+  
+.mobile_pickvalue__plus:active > .icon {
+    background-size: 95%;
+    background-position: center; }
+  
+.mobile_pickvalue__valuebox {
+    display: inline-block;
+    color: #43B05C;
+    font-weight: bold;
+    text-align: center;
+    padding: 0 8px; }
+  
+.mobile_pickvalue--dark > .mobile_pickvalue__valuebox {
+    color: #000; }
+  
+.mobile_pickvalue__line {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    border: 1px solid #7FC489;
+    height: 0; }
+  
+.mobile_pickvalue--dark > .mobile_pickvalue__line {
+    border-color: #E0DEDE; }
+  
+.mobile_pickvalue__value {
+    display: inline-block;
+    font-size: 40px; }
+  
+.mobile_pickvalue__currency {
+    display: inline-block;
+    font-size: 30px; }
+  
+.mobile_pickvalue__currency--little {
+    font-size: 13px;
+    vertical-align: super; }
+  
+.mobile_pickvalue__description {
+    color: #4A4A4A;
+    font-size: 14px;
+    font-weight: 300; }
+    
+.icon {
+    display: inline-block; }
+  
+.icon--ruble::after {
+    display: inline-block;
+    content: '₸';
+    font-family: "PT Sans", sans-serif; }
+    .icon--minus {
+      background: url("/img_register/mobile/minus.svg") no-repeat;
+      width: 42px;
+      height: 43px;
+      vertical-align: middle; }
+  
+.icon--plus {
+    background: url("/img_register/mobile/plus.svg") no-repeat;
+    width: 42px;
+    height: 43px;
+    vertical-align: middle; }
+  
+.icon--minus_dark {
+    background: url("/img_register/mobile/minus-dark.svg") no-repeat;
+    width: 42px;
+    height: 43px;
+    vertical-align: middle; }
+  
+.icon--plus_dark {
+    background: url("/img_register/mobile/plus-dark.svg") no-repeat;
+    width: 42px;
+    height: 43px;
+    vertical-align: middle; }
+  
+@media screen and (min-width: 400px) {
+    .mobile_pickvalue {
+        padding: 0 10px;
+    }
+}
