@@ -57,11 +57,11 @@ class SiteController extends Controller
     /**
      * Displays homepage.
      *
-     * @return string
+     * @return Response|\yii\console\Response
      */
     public function actionIndex()
     {
-        return $this->render('index');
+        return Yii::$app->response->redirect(['register/index']);
     }
 
     /**
@@ -92,7 +92,7 @@ class SiteController extends Controller
     /**
      * Logout action.
      *
-     * @return string
+     * @return Response
      */
     public function actionLogout()
     {

@@ -104,18 +104,6 @@ class SiteController extends Controller
         ]);
     }
 
-    public function actionCredit()
-    {
-        $this->layout = 'main-register';
-        $partners = Partners::find()->where(['status' => 1])->orderBy(['sort' => SORT_ASC])->asArray()->all();
-        $otkazPage = OtkazPage::findOne(1);
-
-        return $this->render('credit', [
-            'otkazPage' => $otkazPage,
-            'partners' => $partners
-        ]);
-    }
-
     /**
      * Logs in a user.
      *

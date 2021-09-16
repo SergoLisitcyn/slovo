@@ -109,7 +109,7 @@ $this->registerJsFile(Yii::getAlias('@web') . 'js_register/slider.js', [
             </div>
             <div class="mobile_form_wrapper">
                 <form
-                        action="success"
+                        action="register/success"
                         method="post"
                         id="mobile_register"
                         class="mobile_form"
@@ -272,7 +272,7 @@ $this->registerJsFile(Yii::getAlias('@web') . 'js_register/slider.js', [
             <section class="content">
                 <div class="container">
                     <div class="form__wrap">
-                        <form class="form" id="register" action="success" method="post">
+                        <form class="form" id="register" action="register/success" method="post">
                             <h2 class="form__title">Оформить заявку на микрокредит</h2>
                             <div class="slider_container">
                                 <div class="form__item">

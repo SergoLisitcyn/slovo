@@ -46,7 +46,8 @@ return [
                 'news' => '/sale-news/index-news',
                 'actions' => '/sale-news/index-sales',
                 'reviews' => '/reviews/index',
-                'credit' => '/site/credit',
+//                'credit' => '/register/credit',
+                'register' => '/register/index',
                 [
                     'pattern' => 'blog/<url:\S+>',
                     'route' => '/blog/view',
