@@ -8,17 +8,17 @@
         <div class="form__wrap__success">
             Заявка предварительно <b>одобрена</b>.<br>
             Чтобы получить деньги,
-            <a href="<?= $link ?>" style="text-decoration: underline">
+            <a href="" style="text-decoration: underline">
                 перейдите в личный кабинет
             </a>.
             <p style="margin-top: 10px"></p>
             Өтінім алдын ала <b>мақұлданды</b>.<br>
             Ақша алу үшін
-            <a href="<?= $link ?>" style="text-decoration: underline">
+            <a href="" style="text-decoration: underline">
                 жеке кабинетке өтіңіз
             </a>.
         </div>
-        <p><a class="form__otkaz-btn" href="<?= $link ?>">
+        <p><a class="form__otkaz-btn" href="">
                 Перейти</a>
         </p>
     </div>

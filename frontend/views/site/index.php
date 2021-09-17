@@ -19,7 +19,7 @@ $this->registerJsFile(Yii::getAlias('@web') . 'js_register/slider.js', [
 <div class="get-money-form">
     <div id="component-slider">
     <div class="form__wrap">
-        <form class="form" id="register" action="register/index" method="post">
+        <form class="form" id="register" action="register" method="post">
             <h2 class="form__title">МИКРОКРЕДИТЫ В КАЗАХСТАНЕ</h2>
             <div class="slider_container">
                 <div class="form__item">
@@ -224,7 +224,7 @@ $this->registerJsFile(Yii::getAlias('@web') . 'js_register/slider.js', [
         <li><img alt="" src="images/big-icon-a.png" /><strong>Оформите заявку</strong> на микрокредит<br />&nbsp;</li>
         <li><img alt="" src="images/big-icon-b.png" /><strong>Заявка рассматривается</strong> всего за пять минут<br />&nbsp;</li>
         <li><img alt="" src="images/big-icon-c.png" /><strong>Моментально</strong> деньги поступают на счёт<br />
-            <a href="usloviya/index.html">
+            <a href="/page/usloviya">
                 Узнать подробнее об условиях
             </a>
         </li>
@@ -238,7 +238,7 @@ $this->registerJsFile(Yii::getAlias('@web') . 'js_register/slider.js', [
         <div class="item-block">
             <div class="item">
                 <img src="images/i/1.png" alt="">
-                <p><strong><a href="microzaym-srochno/index.html">Срочный перевод денег</a></strong></p>
+                <p><strong><a href="/page/microzaym-srochno">Срочный перевод денег</a></strong></p>
             </div>
             <div class="item">
                 <img src="images/i/2.png" alt="">
@@ -246,28 +246,28 @@ $this->registerJsFile(Yii::getAlias('@web') . 'js_register/slider.js', [
             </div>
             <div class="item">
                 <img src="images/i/4.png" alt="">
-                <p><strong>Перевод на <a href="onlajn-zajm-v-kazahstane-na-bankovskij-schet/index.html">счет</a>
-                        или <a href="onlajn-zajmy-v-kazahstane-na-kartu/index.html">карту</a></strong></p>
+                <p><strong>Перевод на <a href="/page/onlajn-zajm-v-kazahstane-na-bankovskij-schet">счет</a>
+                        или <a href="/page/onlajn-zajmy-v-kazahstane-na-kartu">карту</a></strong></p>
             </div>
         </div>
         <div class="item-block">
             <div class="item">
                 <img src="images/i/5.png" alt="">
-                <p><strong><a href="vozvrat-zaima/index.html">Удобные способы погашения микрокредита</a></strong></p>
+                <p><strong><a href="/page/vozvrat-zaima">Удобные способы погашения микрокредита</a></strong></p>
             </div>
             <div class="item">
                 <img src="images/i/8.png" alt="">
-                <p><strong><a href="privileges/index.html">Программа лояльности</a></strong></p>
+                <p><strong><a href="/page/privileges">Программа лояльности</a></strong></p>
             </div>
             <div class="item">
                 <img src="images/i/10.png" alt="">
-                <p><strong><a href="actions/index.html">Акции и специальные предложения</a></strong></p>
+                <p><strong><a href="actions">Акции и специальные предложения</a></strong></p>
             </div>
         </div>
     </div>
     <p></p>
 </div>
-<a href="register/index.html" class="scrollbutton">Получить деньги онлайн</a>
+<a href="register" class="scrollbutton">Получить деньги онлайн</a>
 
 <?= $mainPage->text ?>
 

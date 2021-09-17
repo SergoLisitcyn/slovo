@@ -22,7 +22,7 @@
 </div>
 <ul class='how-its-done news'>
     <li class='filler' style='display: list-item;'>
-        <a href='http://4slovo.kz/review-new.html' class='fancybox.ajax window-link2'>Оставить отзыв</a>
+<!--        <a href='http://4slovo.kz/review-new.html' class='fancybox.ajax window-link2'>Оставить отзыв</a>-->
         <a href='reviews'>Все отзывы</a>
     </li>
 </ul>

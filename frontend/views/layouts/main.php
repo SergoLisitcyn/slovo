@@ -58,9 +58,8 @@ AppAsset::register($this);
             <div class="given">
             </div>
             <ul class="menu menu-right">
-                <li><a href="usloviya/index.html" class="f">Условия</a></li>
-                <li><a href="privileges/index.html">Постоянным клиентам</a></li>
-                <li><a href="/page/protection-of-consumer-rights">FAQ</a></li>
+                <li><a href="/page/privileges">Постоянным клиентам</a></li>
+                <li><a href="/page/protection-of-consumer-rights">Вопросы и ответы</a></li>
             </ul>
             <ul class="menu menu-left">
                 <li><a href="/page/kak-poluchit-zaym" class="f">Как получить деньги</a></li>
@@ -150,20 +149,20 @@ AppAsset::register($this);
             <ul class="menu">
                 <li><a href="/page/about">О компании</a></li>
                 <li><a href="/page/requisitions">Реквизиты</a></li>
-                <li><a href="page/pravila">Правила</a></li>
-                <li><a href="page/usloviya">Соглашение на обработку персональных данных</a></li>
+                <li><a href="/page/pravila">Правила</a></li>
+                <li><a href="/page/usloviya">Соглашение на обработку персональных данных</a></li>
                 <li><a href="page/usluga">Услуга консультирования</a></li>
                 <li><a href="blog">Блог</a></li>
                 <li><a href="actions">Акции</a></li>
                 <li><a href="news">Новости</a></li>
-                <li><a href="press/index.html">СМИ о нас</a></li>
+                <li><a href="/page/press">СМИ о нас</a></li>
                 <li><a href="/page/kak-poluchit-zaym">Как получить деньги</a></li>
                 <li><a href="/page/vozvrat-zaima">Как погасить микрокредит</a></li>
                 <li><a href="/page/protection-of-consumer-rights">Вопросы и ответы</a></li>
-                <li><a href="privileges/index.html">Постоянным клиентам</a></li>
-                <li><a href="partners/index.html">Партнерам</a></li>
-                <li><a href="friends/index.html">Приглашайте друзей</a></li>
-                <li><a href="usloviya/index.html">Условия</a></li>
+                <li><a href="/page/privileges">Постоянным клиентам</a></li>
+                <li><a href="/page/partners">Партнерам</a></li>
+                <li><a href="/page/friends">Приглашайте друзей</a></li>
+                <li><a href="/page/usloviya">Условия</a></li>
             </ul>
 
             <div class="social">Мы в социальных сетях —

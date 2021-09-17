@@ -5,6 +5,7 @@ namespace frontend\controllers;
 use common\models\Calculator;
 use common\models\OtkazPage;
 use common\models\Partners;
+use common\models\Settings;
 use Yii;
 use common\models\Register;
 use yii\web\Controller;
@@ -61,6 +62,7 @@ class RegisterController extends Controller
 
     public function actionSuccess()
     {
+        $this->layout = 'main-register';
         $cookie = null;
         $dataUtm = Register::getUtm($cookie);
 
@@ -96,11 +98,11 @@ class RegisterController extends Controller
 
                 $signature = base64_encode(sha1(json_encode($dataSig) . $dataUtm['password'], true));
                 $response = Register::getApiSlovoCheck($dataUtm['partnerId'],$dataSig,$signature);
-                if(isset($response['error'])) return $this->redirect('register/credit');
+                if(isset($response['error'])) return $this->redirect('credit');
 
                 if($response['response'] == 'OK'){
                     $response = Register::getApiSlovoLink($dataUtm['partnerId'],$dataSig,$signature);
-                    if(isset($response['error'])) if($response['error'] == 'Повторный запрос')  return $this->redirect('register/credit');
+                    if(isset($response['error'])) if($response['error'] == 'Повторный запрос')  return $this->redirect('credit');
 
                     if(isset($response['link'])){
                         $model->link = $response['link'].'?=&'.$dataUtm['linkUtm'];
@@ -115,19 +117,19 @@ class RegisterController extends Controller
                         if($response['response'] == 'new person added'){
                             return $this->redirect($linkRedirect);
                         } elseif ($response['response'] == 'moved to broker'){
-                            return $this->render('register/success', [
+                            return $this->render('success', [
                                 'model' => $model,
 //                                'settings' => $settings,
                                 'link' => $linkRedirect,
                             ]);
                         } else {
-                            return $this->redirect('register/credit');
+                            return $this->redirect('credit');
                         }
                     } else {
-                        return $this->redirect('register/credit');
+                        return $this->redirect('credit');
                     }
                 } else {
-                    return $this->redirect('register/credit');
+                    return $this->redirect('credit');
                 }
             } else {
                 Yii::$app->session->setFlash(

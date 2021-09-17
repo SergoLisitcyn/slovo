@@ -19,7 +19,7 @@ use \yii\helpers\Url;
     <li class="filler" style="margin-bottom: 30px;">
         <a href="actions">Все акции</a>
         <a href="news">Все новости</a>
-        <a href="press/index.html">СМИ
+        <a href="/page/press">СМИ
             о нас
         </a>
     </li>
