@@ -14,9 +14,6 @@ AppAsset::register($this);
 <!DOCTYPE html>
 <html lang="<?= Yii::$app->language ?>">
 <head>
-    <title>Микрокредиты в Казахстане через интернет в онлайн-сервисе «Честное слово» - ТОО «МФО «Akshabar»</title>
-    <META NAME="description" CONTENT="Срочно взять онлайн микрокредит в онлайн-сервисе «Честное слово»">
-    <meta name="Keywords" content="микрозайм, взять микрозайм, микрозайм онлайн, взять микрозайм онлайн, микрозайм денег, взять микрозайм через интернет, микрокредиты в Казахстане, кредит ">
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
     <meta name="robots" content="noyaca"/>
     <meta name="robots" content="noodp"/>
