@@ -148,10 +148,10 @@ AppAsset::register($this);
                 <li><a href="/page/requisitions">Реквизиты</a></li>
                 <li><a href="/page/pravila">Правила</a></li>
                 <li><a href="/page/usloviya">Соглашение на обработку персональных данных</a></li>
-                <li><a href="page/usluga">Услуга консультирования</a></li>
-                <li><a href="blog">Блог</a></li>
-                <li><a href="actions">Акции</a></li>
-                <li><a href="news">Новости</a></li>
+                <li><a href="/page/usluga">Услуга консультирования</a></li>
+                <li><a href="/blog">Блог</a></li>
+                <li><a href="/actions">Акции</a></li>
+                <li><a href="/news">Новости</a></li>
                 <li><a href="/page/press">СМИ о нас</a></li>
                 <li><a href="/page/kak-poluchit-zaym">Как получить деньги</a></li>
                 <li><a href="/page/vozvrat-zaima">Как погасить микрокредит</a></li>

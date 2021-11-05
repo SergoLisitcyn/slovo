@@ -4,6 +4,8 @@ use yii\helpers\Html;
 use yii\widgets\ActiveForm;
 use vova07\imperavi\Widget;
 use \yii\helpers\Url;
+use \kartik\date\DatePicker;
+
 
 /* @var $this yii\web\View */
 /* @var $model common\models\Blog */
@@ -40,7 +42,10 @@ use \yii\helpers\Url;
         ]
     ])?>
 
-    <?= $form->field($model, 'date')->textInput() ?>
+    <?= $form->field($model, 'date')->widget(DatePicker::className(),['pluginOptions' => [
+        'autoclose'=>true,
+        'format' => 'dd.mm.yyyy'
+    ]])->label('Дата публикации')->hint('20.08.2021') ?>
 
     <?= $form->field($model, 'title')->textInput(['maxlength' => true]) ?>
 
