@@ -5,7 +5,7 @@ use \yii\helpers\Url;
 <ul class="how-its-done news">
     <?php foreach ($sales as $sale) : ?>
         <li>
-            <div class="news_date"><?= date('d.m.Y',strtotime($sale->date)) ?></div>
+            <div class="news_date"><?php if($sale->date) : echo $sale->date;endif;  ?></div>
             <?php if($sale->type == 0) : ?>
             <a href="<?= Url::toRoute(['sale-news/news-view', 'url' => $sale->url]) ?>" class="news_title">
             <?php else : ?>
