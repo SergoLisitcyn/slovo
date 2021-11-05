@@ -9,7 +9,7 @@ use yii\widgets\DetailView;
 $this->title = $model->name;
 if (isset($model->title) && !empty($model->title)) $this->title = $model->title;
 if (isset($model->description) && !empty($model->description)) $this->registerMetaTag(['name' => 'description', 'content' => $model->description]);
-if (isset($model->keywords) && !empty($model->keywords)) $this->registerMetaTag(['name' => 'description', 'content' => $model->keywords]);
+if (isset($model->keywords) && !empty($model->keywords)) $this->registerMetaTag(['name' => 'keywords', 'content' => $model->keywords]);
 ?>
 <div class="get-money-form text-page news">
     <div class="news_date" style="font-size: 12px;">
