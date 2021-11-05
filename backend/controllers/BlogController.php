@@ -168,14 +168,14 @@ class BlogController extends Controller
      * @throws Exception
      * @throws BadRequestHttpException
      */
-    public function actionSaveRedactorImg ($sub = 'main')
+    public function actionSaveRedactorImg($sub = 'main')
     {
         $this -> enableCsrfValidation = false;
         if (Yii::$app->request->isPost) {
             $dir = Yii::getAlias('@frontend/web') . '/uploads/images/' . $sub . '/';
             if (!file_exists($dir)) FileHelper::createDirectory($dir);
 
-            $result_link = 'http://slovo.local/uploads/images/' . $sub . '/';
+            $result_link = 'https://www.slovo.promonument.ru/uploads/images/' . $sub . '/';
             $file = UploadedFile::getInstanceByName('file');
             $model = new DynamicModel (compact ('file'));
             $model ->addRule ('file', 'image')->validate();
