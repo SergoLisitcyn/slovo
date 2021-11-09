@@ -11,7 +11,7 @@ use vova07\imperavi\Widget;
 <div class="main-page-form">
 
     <?php $form = ActiveForm::begin(); ?>
-
+    <?php if($model['id'] != 2): ?>
     <?= $form->field($model, 'text')->widget(Widget::className(), [
         'settings' => [
             'lang' => 'ru',
@@ -30,13 +30,15 @@ use vova07\imperavi\Widget;
 
         ]
     ])?>
-
+<?php endif; ?>
     <?= $form->field($model, 'title')->textInput(['maxlength' => true]) ?>
 
     <?= $form->field($model, 'description')->textInput(['maxlength' => true]) ?>
 
     <?= $form->field($model, 'keywords')->textInput(['maxlength' => true]) ?>
-
+    <?php if($model['id'] != 2): ?>
+    <?= $form->field($model, 'metrics')->textarea(['rows' => 6]) ?>
+    <?php endif; ?>
     <div class="form-group">
         <?= Html::submitButton('Сохранить', ['class' => 'btn btn-success']) ?>
     </div>

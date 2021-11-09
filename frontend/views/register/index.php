@@ -6,9 +6,9 @@ use \frontend\assets\RegisterAsset;
 VueAsset::register($this);
 /* @var $this yii\web\View */
 
-if(isset($settings->title) and !empty($settings->title)) { $this->title = $settings->title; }
-if(isset($settings->keywords) and !empty($settings->keywords)) { $this->registerMetaTag(['name' => 'keywords','content' => $settings->keywords]); }
-if(isset($settings->description) and !empty($settings->description)) { $this->registerMetaTag(['name' => 'description','content' => $settings->description]); }
+if(isset($seoTag->title) and !empty($seoTag->title)) { $this->title = $seoTag->title; }
+if(isset($seoTag->keywords) and !empty($seoTag->keywords)) { $this->registerMetaTag(['name' => 'keywords','content' => $seoTag->keywords]); }
+if(isset($seoTag->description) and !empty($seoTag->description)) { $this->registerMetaTag(['name' => 'description','content' => $seoTag->description]); }
 
 $this->registerJsVar('__conditions', $conditions, $position = View::POS_BEGIN);
 $this->registerJsVar('settingsRate', $settingsRate, $position = View::POS_BEGIN);

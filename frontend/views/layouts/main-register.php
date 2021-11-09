@@ -5,7 +5,7 @@
 
 use yii\helpers\Html;
 use frontend\assets\RegisterAsset;
-
+use \frontend\widgets\Seo;
 RegisterAsset::register($this);
 ?>
 <?php $this->beginPage() ?>
@@ -57,7 +57,7 @@ if(isset($_COOKIE['utm'])){
     <div class="mobile__header-nav">
         <a class="mobile__menu-button" href="#"><i class="custom-icon-menu"></i></a>
         <a class="mobile__mail-button" href="<?= $link ?>" onclick="ym(56286430,'reachGoal','4slovo_login_form'); return true;">
-            <i class="custom-icon-mails" style="vertical-align: middle;width: 35px;height: 35px;background: #7dc587 url(/img/icon-user.png) no-repeat 50% 50%;
+            <i class="custom-icon-mails" style="vertical-align: middle;width: 35px;height: 35px;background: #7dc587 url(/img_register/icon-user.png) no-repeat 50% 50%;
     display: inline-block;margin-top: 5px;"></i>
         </a>
         <a href="/">
@@ -202,7 +202,7 @@ if(isset($_COOKIE['utm'])){
 </script>
 <noscript><div><img src="https://mc.yandex.ru/watch/56286430" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
 <!-- /Yandex.Metrika counter -->
-
+<?= Seo::widget() ?>
 <?php $this->endBody() ?>
 </body>
 </html>

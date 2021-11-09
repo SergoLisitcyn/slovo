@@ -7,7 +7,8 @@ use yii\helpers\Html;
 use yii\widgets\Breadcrumbs;
 use frontend\assets\AppAsset;
 use common\widgets\Alert;
-use antkaz\vue\VueAsset;
+use \frontend\widgets\Seo;
+
 AppAsset::register($this);
 ?>
 <?php $this->beginPage() ?>
@@ -191,7 +192,7 @@ AppAsset::register($this);
     </div>
 </div>
 <script src="http://cdn.krible.com/loader?code=b2fd05e4f8c2222fc274f7e9313a3019" async></script>
-
+<?= Seo::widget() ?>
 <?php $this->endBody() ?>
 </body>
 </html>

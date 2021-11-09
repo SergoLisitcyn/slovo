@@ -12,6 +12,7 @@ use Yii;
  * @property string|null $title
  * @property string|null $description
  * @property string|null $keywords
+ * @property string|null $metrics
  */
 class MainPage extends \yii\db\ActiveRecord
 {
@@ -31,6 +32,7 @@ class MainPage extends \yii\db\ActiveRecord
         return [
             [['text'], 'string'],
             [['title', 'description', 'keywords'], 'string', 'max' => 255],
+            [['metrics'], 'string'],
         ];
     }
 
@@ -45,6 +47,7 @@ class MainPage extends \yii\db\ActiveRecord
             'title' => 'Title',
             'description' => 'Description',
             'keywords' => 'Keywords',
+            'metrics' => 'Метрика',
         ];
     }
 }

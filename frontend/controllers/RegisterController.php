@@ -3,6 +3,7 @@
 namespace frontend\controllers;
 
 use common\models\Calculator;
+use common\models\MainPage;
 use common\models\OtkazPage;
 use common\models\Partners;
 use common\models\Settings;
@@ -53,10 +54,11 @@ class RegisterController extends Controller
             "product" => 1
         ];
         $conditions[] = $condition;
-
+        $seoTag = MainPage::findOne(2);
         return $this->render('index', [
             'conditions' => $conditions,
-            'settingsRate' => $settingsRate
+            'settingsRate' => $settingsRate,
+            'seoTag' => $seoTag,
         ]);
     }
 
