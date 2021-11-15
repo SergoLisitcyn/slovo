@@ -432,13 +432,13 @@ header .personal ul {
     padding-top: 10px;
     margin-bottom: 10px;
 }
+
 .label-mobile {
     position: absolute;
     left: 10px;
     top: 17px;
     transition: top 0.5s;
 }
-
 
 .input-mobile:focus {
     outline: none;
@@ -447,15 +447,15 @@ header .personal ul {
     box-shadow: none;
 }
 
-.input-mobile:focus+label,
-.input-mobile:not(:placeholder-shown)+label {
-    top: -18px;
-}
-
 .input-mobile::-webkit-input-placeholder {
     opacity: 0;
 }
 
 .input-mobile:focus::-webkit-input-placeholder {
     opacity: 1;
+}
+
+.input-mobile:not(:placeholder-shown) ~ .label-mobile,
+.input-mobile:focus ~ .label-mobile{
+    top: -18px;
 }

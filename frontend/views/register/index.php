@@ -41,10 +41,10 @@ $this->registerJsFile(Yii::getAlias('@web') . 'js_register/slider.js', [
                         </div>
                         <div class="mobile_pickvalue__line"></div>
                         <div class="mobile_pickvalue__valuebox">
-                            <span class="mobile_pickvalue__value" :style="{color:promoTextColor}">{{newLoan.amount}}</span>
-                            <span class="mobile_pickvalue__currency" :style="{color:promoTextColor}">
-                              <span class="icon icon--ruble"></span>
-                          </span>
+                            <div class="mobile_pickvalue__value" :style="{color:promoTextColor}">{{newLoan.amount}}</div>
+                            <div class="mobile_pickvalue__currency" :style="{color:promoTextColor}">
+                                <span class="icon icon--ruble"></span>
+                            </div>
                         </div>
                         <div class="mobile_pickvalue__line"></div>
                         <div class="mobile_pickvalue__plus">
