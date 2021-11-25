@@ -27,7 +27,19 @@ $this->params['breadcrumbs'][] = $this->title;
                 'options' => ['width' => '10'],
             ],
             'name',
-            'url:url',
+            [
+                'label' => 'Ссылка',
+                'format' => 'raw',
+                'hAlign' => 'center',
+                'value' => function ($model) {
+                    if($model->url){
+                        return Html::tag('a', $model->url, ['href' => (Yii::$app->params['siteUrl'].'blog/'.$model->url)]);
+                    } else {
+                        return '';
+                    }
+
+                },
+            ],
             [
                 'label' => 'Статус',
                 'value' => function ($model) {

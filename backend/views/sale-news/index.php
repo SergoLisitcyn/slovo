@@ -17,7 +17,6 @@ $this->params['breadcrumbs'][] = $this->title;
     <p>
         <?= Html::a('Создать', ['create'], ['class' => 'btn btn-success']) ?>
     </p>
-
     <?= \kartik\grid\GridView::widget([
         'dataProvider' => $dataProvider,
         'filterModel' => $searchModel,
@@ -27,7 +26,24 @@ $this->params['breadcrumbs'][] = $this->title;
                 'options' => ['width' => '10'],
             ],
             'name',
-            'url:url',
+            [
+                'label' => 'Ссылка',
+                'format' => 'raw',
+                'hAlign' => 'center',
+                'value' => function ($model) {
+                    if($model->url){
+                        if($model->type == 0){
+                            $value = 'news';
+                        } else {
+                            $value = 'actions';
+                        }
+                        return Html::tag('a', $model->url, ['href' => (Yii::$app->params['siteUrl'].$value.'/'.$model->url)]);
+                    } else {
+                        return '';
+                    }
+
+                },
+            ],
             [
                 'class' => 'kartik\grid\EditableColumn',
                 'attribute' => 'type',
