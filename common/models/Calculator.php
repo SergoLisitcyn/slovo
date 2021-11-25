@@ -48,7 +48,7 @@ class Calculator extends \yii\db\ActiveRecord
             'amount' => 'Максимальное значение кредита',
             'min_amount' => 'Минимальное значение кредита',
             'term' => 'Срок кредита',
-            'min_term' => 'Минимальный значение срока',
+            'min_term' => 'Минимальное значение срока',
             'rule_violation_percent' => 'Процент',
             'rate' => 'Ставка',
             'amount_step' => 'Шаг кредита',

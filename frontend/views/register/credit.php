@@ -5,7 +5,9 @@ use antkaz\vue\VueAsset;
 
 VueAsset::register($this);
 $this->title = 'В заявке отказано. Попробуйте подать заявку в другую компанию';
-
+if(isset($otkazPage->title_seo) and !empty($otkazPage->title_seo)) { $this->title = $otkazPage->title_seo; }
+if(isset($otkazPage->keywords) and !empty($otkazPage->keywords)) { $this->registerMetaTag(['name' => 'keywords','content' => $otkazPage->keywords]); }
+if(isset($otkazPage->description) and !empty($otkazPage->description)) { $this->registerMetaTag(['name' => 'description','content' => $otkazPage->description]); }
 $this->registerJsFile(Yii::getAlias('@web') . '/js_register/vue.min.js', ['position' => View::POS_END]);
 $this->registerJsFile(Yii::getAlias('@web') . '/js_register/credit.js', ['position' => View::POS_END, 'type' => 'module']);
 $this->registerJsVar('partners', $partners, $position = View::POS_BEGIN);

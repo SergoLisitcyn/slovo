@@ -11,7 +11,7 @@
                      else $image = 'img/response/default.png';
                     ?>
 
-                    <img alt="" src="<?= $image ?>"/>
+                    <img alt="" src="<?= $image ?>" style="height: 174px;width: 174px"/>
                     <strong class="fio-city"><?= $review->name ?>, <?= $review->city ?></strong>
                     <span><span><?= $review->text ?></span></span>
                 </p>

@@ -6,9 +6,9 @@ use yii\web\View;
 use antkaz\vue\VueAsset;
 /* @var $this yii\web\View */
 VueAsset::register($this);
-$this->title = 'Микрокредиты в Казахстане через интернет в онлайн-сервисе «Честное слово» - ТОО «МФО «Akshabar»';
-$this->registerMetaTag(['name' => 'description', 'content' => 'Срочно взять онлайн микрокредит в онлайн-сервисе «Честное слово»']);
-$this->registerMetaTag(['name' => 'keywords', 'content' => 'микрозайм, взять микрозайм, микрозайм онлайн, взять микрозайм онлайн, микрозайм денег, взять микрозайм через интернет, микрокредиты в Казахстане, кредит ']);
+if(isset($mainPage->title) and !empty($mainPage->title)) { $this->title = $mainPage->title; }
+if(isset($mainPage->keywords) and !empty($mainPage->keywords)) { $this->registerMetaTag(['name' => 'keywords','content' => $mainPage->keywords]); }
+if(isset($mainPage->description) and !empty($mainPage->description)) { $this->registerMetaTag(['name' => 'description','content' => $mainPage->description]); }
 $this->registerJsVar('__conditions', $conditions, $position = View::POS_BEGIN);
 $this->registerJsVar('settingsRate', $settingsRate, $position = View::POS_BEGIN);
 $this->registerJsFile(Yii::getAlias('@web') . 'js_register/vue.min.js', ['position' => View::POS_END]);

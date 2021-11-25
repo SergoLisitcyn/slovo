@@ -13,7 +13,7 @@ $this->title = 'Отзывы клиентов';
                         else $image = 'img/response/default.png';
                         ?>
                         <p>
-                            <img src="<?= $image ?>"  alt=""/>
+                            <img src="<?= $image ?>"  alt="" style="height: 174px;width: 174px"/>
                             <strong class="fio-city"><?= $review->name ?>, <?= $review->city ?></strong>
                             <span><span><?= $review->text ?></span></span>
                         </p>

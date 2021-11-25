@@ -4,6 +4,8 @@ namespace common\models;
 
 use Yii;
 use yii\behaviors\TimestampBehavior;
+use yii\helpers\FileHelper;
+use yii\web\UploadedFile;
 
 /**
  * This is the model class for table "reviews".
@@ -21,6 +23,7 @@ use yii\behaviors\TimestampBehavior;
  */
 class Reviews extends \yii\db\ActiveRecord
 {
+    public $mainfile;
     /**
      * {@inheritdoc}
      */
@@ -49,6 +52,7 @@ class Reviews extends \yii\db\ActiveRecord
             [['text'], 'string'],
             [['created_at', 'updated_at', 'status', 'sort'], 'integer'],
             [['name', 'city', 'email', 'image'], 'string', 'max' => 255],
+            [['mainfile'], 'file'],
         ];
     }
 
@@ -68,6 +72,31 @@ class Reviews extends \yii\db\ActiveRecord
             'updated_at' => 'Updated At',
             'status' => 'Статус',
             'sort' => 'Сортировка',
+            'mainfile' => 'Изображение',
         ];
+    }
+
+    public function afterSave($insert, $changedAttributes)
+    {
+        parent::afterSave($insert, $changedAttributes);
+
+        $imageSquareFile = UploadedFile::getInstance($this, 'mainfile');
+        if ($imageSquareFile) {
+            $directory = Yii::getAlias('@frontend/web/uploads/images/reviews/main-image') . DIRECTORY_SEPARATOR;
+            if (!is_dir($directory)) {
+                FileHelper::createDirectory($directory);
+            }
+
+            $uid = date('YmdHs').Yii::$app->security->generateRandomString(6);
+            $fileName = $uid . '-reviews_image.' . $imageSquareFile->extension;
+            $filePath = $directory . $fileName;
+            if ($imageSquareFile->saveAs($filePath)) {
+                $path = '/uploads/images/reviews/main-image/' . $fileName;
+
+                @unlink(Yii::getAlias('@frontend/web') . $this->mainfile);
+                $this->setAttribute('image', $path);
+                $this->save();
+            }
+        }
     }
 }

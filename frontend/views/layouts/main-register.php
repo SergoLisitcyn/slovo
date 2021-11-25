@@ -171,7 +171,7 @@ if(isset($_COOKIE['utm'])){
     <div class="footer__bottom">
         <div class="container">
             <ul class="payment">
-                <li><a href="https://4slovo.kz/protection-of-consumer-rights/"><img alt="" src="images/shield.png" /></a></li>
+                <li><a href="https://4slovo.kz/protection-of-consumer-rights/"><img alt="" src="/images/shield.png" /></a></li>
                 <li><img alt="" src="/images/visa.png" /></li>
                 <li><img alt="" src="/images/visa2.png" /></li>
                 <li><img alt="" src="/images/mastercard.png" /></li>

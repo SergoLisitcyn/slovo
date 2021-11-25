@@ -156,4 +156,13 @@ class ReviewsController extends Controller
 
         throw new NotFoundHttpException('The requested page does not exist.');
     }
+
+    public function actionDeleteimg($id){
+
+        $model = Reviews::find()->where(['id' => $id])->one();
+        $model->image = null;
+        $model->update(false);
+
+        return $this->redirect(["reviews/update?id=$id"]);
+    }
 }
