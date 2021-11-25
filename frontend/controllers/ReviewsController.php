@@ -35,7 +35,7 @@ class ReviewsController extends Controller
      */
     public function actionIndex()
     {
-        $reviews = Reviews::find()->where(['status' => 1])->all();
+        $reviews = Reviews::find()->where(['status' => 1])->orderBy(['sort' => SORT_ASC])->all();
 
         return $this->render('index', [
             'reviews' => $reviews,
