@@ -59,8 +59,10 @@ class SignupForm extends Model
 
             if($this->role == 'manager'){
                 $user->role = 'manager';
-            } else {
+            } elseif($this->role == 'client') {
                 $user->role = 'client';
+            } elseif($this->role == 'admin'){
+                $user->role = 'admin';
             }
             $user->setPassword($this->password);
             $user->generateAuthKey();

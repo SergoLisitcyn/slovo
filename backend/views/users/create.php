@@ -25,11 +25,18 @@ $this->params['breadcrumbs'][] = $this->title;
                     <?= $form->field($model, 'username')->textInput() ?>
 
                     <?= $form->field($model, 'email') ?>
+                    <?php if(Yii::$app->user->identity->role == 'admin') : ?>
                     <?= $form->field($model, 'role')->dropDownList([
                         'manager' => 'Менеджер',
-                        'client' => 'Клиент'
+                        'client' => 'Клиент',
+                        'admin' => 'Администратор',
                     ]) ?>
-
+                    <?php else : ?>
+                        <?= $form->field($model, 'role')->dropDownList([
+                            'manager' => 'Менеджер',
+                            'client' => 'Клиент'
+                        ]) ?>
+                    <?php endif; ?>
 
 
                     <?= $form->field($model, 'password')->passwordInput() ?>

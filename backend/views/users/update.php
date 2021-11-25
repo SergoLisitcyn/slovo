@@ -30,10 +30,18 @@ $this->params['breadcrumbs'][] = 'Update';
 
                     <?= $form->field($model, 'email') ?>
 
-                    <?= $form->field($model, 'role')->dropDownList([
-                        'manager' => 'Менеджер',
-                        'client' => 'Клиент'
-                    ]) ?>
+                    <?php if(Yii::$app->user->identity->role == 'admin') : ?>
+                        <?= $form->field($model, 'role')->dropDownList([
+                            'manager' => 'Менеджер',
+                            'client' => 'Клиент',
+                            'admin' => 'Администратор',
+                        ]) ?>
+                    <?php else : ?>
+                        <?= $form->field($model, 'role')->dropDownList([
+                            'manager' => 'Менеджер',
+                            'client' => 'Клиент'
+                        ]) ?>
+                    <?php endif; ?>
 
                     <?= $form->field($model, 'status')->dropDownList([
                             '10' => 'Активен',

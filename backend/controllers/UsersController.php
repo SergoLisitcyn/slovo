@@ -11,6 +11,7 @@ use backend\models\SignupForm;
 use yii\helpers\ArrayHelper;
 use yii\helpers\Json;
 use yii\web\Controller;
+use yii\web\HttpException;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
 
@@ -108,7 +109,10 @@ class UsersController extends Controller
         $model = $this->findModel($id);
         $formModel = new ChangePassword();
 
-
+        $user = User::findOne($id);
+        if(Yii::$app->user->identity->role != 'admin' && $user->role == 'admin'){
+            throw new HttpException(403, 'Вы не можете редактировать администратора');
+        }
         if ($formModel->load(Yii::$app->request->post())) {
             if ($formModel->changePassword()) {
                 Yii::$app->session->setFlash('success', 'Password was successfully changed.');
@@ -137,6 +141,8 @@ class UsersController extends Controller
      */
     public function actionDelete($id)
     {
+        if(Yii::$app->user->identity->role != 'admin')  throw new HttpException(403, 'Вы не можете удалять');
+        if(Yii::$app->user->id == $id) throw new HttpException(403, 'Вы не можете удалить');
         $this->findModel($id)->delete();
 
         return $this->redirect(['index']);
