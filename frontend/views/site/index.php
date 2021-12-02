@@ -11,7 +11,6 @@ if(isset($mainPage->keywords) and !empty($mainPage->keywords)) { $this->register
 if(isset($mainPage->description) and !empty($mainPage->description)) { $this->registerMetaTag(['name' => 'description','content' => $mainPage->description]); }
 $this->registerJsVar('__conditions', $conditions, $position = View::POS_BEGIN);
 $this->registerJsVar('settingsRate', $settingsRate, $position = View::POS_BEGIN);
-$this->registerJsFile(Yii::getAlias('@web') . 'js_register/vue.min.js', ['position' => View::POS_END]);
 $this->registerJsFile(Yii::getAlias('@web') . 'js_register/slider.js', [
     'position' => View::POS_END,
     'depends' => ['yii\web\JqueryAsset', 'yii\jui\JuiAsset'],
