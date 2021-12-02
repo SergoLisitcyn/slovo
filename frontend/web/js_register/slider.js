@@ -541,6 +541,14 @@ window.vm = new Vue({
                 display: 'none'
             }
         },
+        styleLoader: function() {
+          if (this.isDataLoaded) return {
+              display: 'none'
+          }
+          return {
+              display:  'block'
+          }
+      },
         termSliderPosition: function () {
             return this.sliderValueToStep(this.newLoan.term, 'term')
         },

@@ -191,7 +191,13 @@ AppAsset::register($this);
         </ul>
     </div>
 </div>
-<script src="http://cdn.krible.com/loader?code=b2fd05e4f8c2222fc274f7e9313a3019" async></script>
+<script defer>
+    window.setTimeout(function() {
+        var tag = document.createElement("script");
+        tag.src = "https://cdn.krible.com/loader?code=b2fd05e4f8c2222fc274f7e9313a3019";
+        document.getElementsByTagName("head")[0].appendChild(tag);
+    }, 3000)
+</script>
 <?= Seo::widget() ?>
 <?php $this->endBody() ?>
 </body>

@@ -24,7 +24,8 @@ $this->registerJsFile(Yii::getAlias('@web') . 'js_register/slider.js', [
             <h2 class="form__title">МИКРОКРЕДИТЫ В КАЗАХСТАНЕ</h2>
             <div class="slider_container">
                 <div class="form__item">
-                    <div v-if="isDataLoaded" v-bind:style="styleObject">
+                    <div v-if="!isDataLoaded" class="slider_container__spinner" v-bind:style="styleLoader">Loading...</div>
+                    <div v-if="isDataLoaded" style="display: none;" v-bind:style="styleObject">
                         <div class="calculatorWrapper">
                             <p
                                     class="p ch1"
