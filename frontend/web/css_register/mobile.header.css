@@ -56,6 +56,8 @@
 ul.mobile__nav-top {
   width: 100%;
   background: #81c38b;
+  margin: 0!important;
+  padding: 0!important;
 }
 ul.mobile__nav-top li {
   list-style: none;
@@ -88,6 +90,7 @@ ul.mobile__nav-top li:last-child a {
 .mobile__menu-button {
   margin-left: 16px;
   float: left;
+  border: none;
 }
 .mobile__mail-button {
   margin-right: 16px;
