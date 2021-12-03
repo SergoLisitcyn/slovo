@@ -95,6 +95,7 @@ ul.mobile__nav-top li:last-child a {
 .mobile__mail-button {
   margin-right: 16px;
   float: right;
+  border: none;
 }
 img.mobile__logo {
   display: block;
