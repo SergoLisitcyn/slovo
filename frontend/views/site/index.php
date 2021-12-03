@@ -11,21 +11,22 @@ if(isset($mainPage->keywords) and !empty($mainPage->keywords)) { $this->register
 if(isset($mainPage->description) and !empty($mainPage->description)) { $this->registerMetaTag(['name' => 'description','content' => $mainPage->description]); }
 $this->registerJsVar('__conditions', $conditions, $position = View::POS_BEGIN);
 $this->registerJsVar('settingsRate', $settingsRate, $position = View::POS_BEGIN);
-$this->registerJsFile(Yii::getAlias('@web') . 'js_register/vue.min.js', ['position' => View::POS_END]);
 $this->registerJsFile(Yii::getAlias('@web') . 'js_register/slider.js', [
     'position' => View::POS_END,
     'depends' => ['yii\web\JqueryAsset', 'yii\jui\JuiAsset'],
     'type' => 'module'
 ]);
 ?>
-<div class="get-money-form">
+<div>Rjyrfd</div>
+<div class="get-money-form desktop-version">
     <div id="component-slider">
     <div class="form__wrap">
         <form class="form" id="register" action="register" method="post">
             <h2 class="form__title">МИКРОКРЕДИТЫ В КАЗАХСТАНЕ</h2>
             <div class="slider_container">
                 <div class="form__item">
-                    <div v-if="isDataLoaded" v-bind:style="styleObject">
+                    <div v-if="!isDataLoaded" class="slider_container__spinner" v-bind:style="styleLoader">Loading...</div>
+                    <div v-if="isDataLoaded" style="display: none;" v-bind:style="styleObject">
                         <div class="calculatorWrapper">
                             <p
                                     class="p ch1"
@@ -218,7 +219,7 @@ $this->registerJsFile(Yii::getAlias('@web') . 'js_register/slider.js', [
     </div>
     </div>
 </div>
-<div class="text">
+<div class="text desktop-version">
     <h2 class="lined">
         <span>Как это работает</span>
     </h2>
@@ -269,18 +270,18 @@ $this->registerJsFile(Yii::getAlias('@web') . 'js_register/slider.js', [
     </div>
     <p></p>
 </div>
-<a href="register" class="scrollbutton">Получить деньги онлайн</a>
+<a href="register" class="scrollbutton desktop-version">Получить деньги онлайн</a>
 
 <?= $mainPage->text ?>
 
-<h2 class="lined">
+<h2 class="lined desktop-version">
     <span>Акции и новости</span>
 </h2>
-<div style="height: 20px;">&nbsp;</div>
+<div class="desktop-version" style="height: 20px;">&nbsp;</div>
 <?= SalesNews::widget() ?>
 
-<h2 class="lined">
+<h2 class="lined desktop-version">
     <span>Блог</span>
 </h2>
-<div style="height: 20px;">&nbsp;</div>
+<div class="desktop-version" style="height: 20px;">&nbsp;</div>
 <?= Blogs::widget() ?>

@@ -15,6 +15,9 @@ class AppAsset extends AssetBundle
         'css/main.css',
         'css/notification-banner.css',
         'css/many.css',
+        'css_register/mobile.header.css',
+        'css_register/mobile.footer.css',
+        'css/desktop.css'
     ];
     public $js = [
         'js_register/test.js',

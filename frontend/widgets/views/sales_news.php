@@ -2,7 +2,7 @@
 use \yii\helpers\Url;
 /* @var $sales common\models\SaleNews */
 ?>
-<ul class="how-its-done news">
+<ul class="how-its-done news desktop-version">
     <?php foreach ($sales as $sale) : ?>
         <li>
             <div class="news_date"><?php if($sale->date) : echo $sale->date;endif;  ?></div>
