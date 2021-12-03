@@ -1,5 +1,5 @@
 @media screen and (max-width: 600px) {
-    .page-wrapper .header, .promo-slider, .width-wrapper, .footer {
+    .page-wrapper .desktop-version {
         display: none;
         width: 0;
         height: 0;

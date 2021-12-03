@@ -17,7 +17,8 @@ $this->registerJsFile(Yii::getAlias('@web') . 'js_register/slider.js', [
     'type' => 'module'
 ]);
 ?>
-<div class="get-money-form">
+<div>Rjyrfd</div>
+<div class="get-money-form desktop-version">
     <div id="component-slider">
     <div class="form__wrap">
         <form class="form" id="register" action="register" method="post">
@@ -218,7 +219,7 @@ $this->registerJsFile(Yii::getAlias('@web') . 'js_register/slider.js', [
     </div>
     </div>
 </div>
-<div class="text">
+<div class="text desktop-version">
     <h2 class="lined">
         <span>Как это работает</span>
     </h2>
@@ -269,18 +270,18 @@ $this->registerJsFile(Yii::getAlias('@web') . 'js_register/slider.js', [
     </div>
     <p></p>
 </div>
-<a href="register" class="scrollbutton">Получить деньги онлайн</a>
+<a href="register" class="scrollbutton desktop-version">Получить деньги онлайн</a>
 
 <?= $mainPage->text ?>
 
-<h2 class="lined">
+<h2 class="lined desktop-version">
     <span>Акции и новости</span>
 </h2>
-<div style="height: 20px;">&nbsp;</div>
+<div class="desktop-version" style="height: 20px;">&nbsp;</div>
 <?= SalesNews::widget() ?>
 
-<h2 class="lined">
+<h2 class="lined desktop-version">
     <span>Блог</span>
 </h2>
-<div style="height: 20px;">&nbsp;</div>
+<div class="desktop-version" style="height: 20px;">&nbsp;</div>
 <?= Blogs::widget() ?>

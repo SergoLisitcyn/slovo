@@ -2,7 +2,7 @@
 use \yii\helpers\Url;
 /* @var $blogs common\models\Blog */
 ?>
-<ul class="how-its-done news">
+<ul class="how-its-done news desktop-version">
     <?php foreach ($blogs as $blog) : ?>
         <li>
             <div class="news_date"><?php if($blog->date) : echo $blog->date;endif;  ?></div>

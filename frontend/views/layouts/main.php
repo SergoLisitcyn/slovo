@@ -20,7 +20,8 @@ AppAsset::register($this);
     <meta name="robots" content="noodp"/>
     <meta charset="<?= Yii::$app->charset ?>">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1>
     <?php $this->registerCsrfMetaTags() ?>
     <title><?= Html::encode($this->title) ?></title>
 
@@ -47,53 +48,31 @@ AppAsset::register($this);
 <body>
 <?php $this->beginBody() ?>
 
-<div class="mobile__header">
-    <ul class="mobile__nav-top" style="display: none">
-        <li><a href="/kak-poluchit-zaym/" class="f">Как это работает</a></li>
-        <li><a href="/privileges/">Привилегии</a></li>
-        <li><a href="/faq/">Вопросы и ответы</a></li>
-        <li><a href="tel:+77273393404">+7 (727) 3393404</a></li>
-        <li><a href="mailto:mfo@4slovo.kz">mfo@4slovo.kz</a></li>
-        <li><a href="https://lk.4slovo.kz/">Войти в личный кабинет</a></li>
-    </ul>
-    <div class="mobile__header-nav">
-        <a class="mobile__menu-button" href="#"><i class="custom-icon-menu"></i></a>
-        <a class="mobile__mail-button" href="/contact_mfo/open.php">
-            <i class="custom-icon-mails" style="vertical-align: middle;width: 35px;height: 35px;background: #7dc587 url(/img_register/icon-user.png) no-repeat 50% 50%;
-                display: inline-block;margin-top: 5px;">
-            </i>
-        </a>
-        <a href="/">
-            <img class="mobile__logo" src="/img_register/mobile/logo.png" width="144" height="70" />
-        </a>
-        <hr class="mobile__divider" />
-    </div>
-</div>
-<div class="mobile__footer">
-    <div class="mobile__footer-social row social-web">Мы в социальных сетях:&nbsp;&nbsp;
-        <a href="https://4slovo.kz/vk"><i class="custom-icon-vk-bottom"></i></a>
-        <a href="https://www.facebook.com/4slovo.kz"><i class="custom-icon-fb-bottom"></i></a>
-        <a href="https://www.instagram.com/4slovo_kz/?utm_source=4slovo_main"><i class="custom-icon-inst-bottom"></i></a>
-    </div>
-    <div class="mobile__footer-feedback row social-web">Обратная связь:&nbsp;&nbsp;<a href="mailto:mfo@4slovo.kz"><i class="custom-icon-mail-gray-bottom"></i></a></div>
-    <div class="row">&copy; <?= date('Y') ?> 4slovo.kz - ТОО МФО «Akshabar»<br> с товарным знаком «Честное слово».<br> Все права защищены.</div>
-    <div class="row">Лицензия АРРФР на осуществление микрофинансовой деятельности № 02.21.0020.М от 12.03.2021г.</div>
-    <div class="row">Адрес: 050059, Казахстан, г. Алматы, пр. Аль-Фараби, д.19, н.п. 29а</div>
-    <div class="mobile__footer-bottom">
-        <ul class="mobile__footer-partners">
-            <li><img src="/img_register/icon/shield.png" /></li>
-            <li><img src="/img_register/icon/visa.png" /></li>
-            <li><img src="/img_register/icon/visa2.png" /></li>
-            <li><img src="/img_register/icon/mastercard.png" /></li>
-            <li><img src="/img_register/icon/mastercard2.png" /></li>
-            <li><img src="/img_register/icon/kassa24.png" /></li>
-            <li><img src="/img_register/icon/kazfintech-logonew.png" /></li>
-        </ul>
-    </div>
-</div>
-
 <div class="page-wrapper">
-    <div class="header">
+<div class="mobile__header">
+        <ul class="mobile__nav-top" style="display: none">
+            <li><a href="/kak-poluchit-zaym/" class="f">Как это работает</a></li>
+            <li><a href="/privileges/">Привилегии</a></li>
+            <li><a href="/faq/">Вопросы и ответы</a></li>
+            <li><a href="tel:+77273393404">+7 (727) 3393404</a></li>
+            <li><a href="mailto:mfo@4slovo.kz">mfo@4slovo.kz</a></li>
+            <li><a href="https://lk.4slovo.kz/">Войти в личный кабинет</a></li>
+        </ul>
+        <div class="mobile__header-nav">
+            <a class="mobile__menu-button" href="#"><i class="custom-icon-menu"></i></a>
+            <a class="mobile__mail-button" href="/contact_mfo/open.php">
+                <i class="custom-icon-mails" style="vertical-align: middle;width: 35px;height: 35px;background: #ffffff url(/img_register/icon-contact.png) no-repeat 50% 50%;
+                    display: inline-block;margin-top: 5px;">
+                </i>
+            </a>
+            <a href="/">
+                <img class="mobile__logo" src="/img_register/mobile/logo.png" width="144" height="70" />
+            </a>
+            <hr class="mobile__divider" />
+        </div>
+    </div>
+
+    <div class="header desktop-version">
         <div class="width-wrapper">
             <div class="logo">
                 <a href="/"><img src="/images/logo.png" alt=""/></a>
@@ -143,7 +122,7 @@ AppAsset::register($this);
             </div>
         </div>
     </div>
-    <div class="promo-slider">
+    <div class="promo-slider desktop-version">
         <div class="in">
             <div class="slider-scene">
                 <div class="slider theme-default">
@@ -171,7 +150,7 @@ AppAsset::register($this);
             <?= $content ?>
         </div>
     </div>
-    <div class="footer footer-height-wrapper">
+    <div class="footer footer-height-wrapper desktop-version">
         <div class="width-wrapper">
             <form method="post" action="https://cp.unisender.com/ru/subscribe?hash=5hrptazc1qa1jyrb5s5yd91hz7za4tp8r5yu63xz7ddtb7ejskc6o" us_mode="embed" target="_blank" class="subscribe">
                 <input type="hidden" name="charset" value="UTF-8"/>
@@ -224,7 +203,7 @@ AppAsset::register($this);
         </div>
     </div>
 
-    <div class="width-wrapper">
+    <div class="width-wrapper desktop-version"> 
         <ul class="how-its-done2">
             <li><a href="https://4slovo.kz/protection-of-consumer-rights/"><img alt="" src="images/shield.png" /></a></li>
             <li><img alt="" src="/images/visa.png" /></li>
@@ -234,6 +213,29 @@ AppAsset::register($this);
             <li><img alt="" src="/images/kassa24.png" /></li>
             <li><img alt="" src="/images/kazfintech-logonew.png" /></li>
         </ul>
+    </div>
+
+    <div class="mobile__footer">
+        <div class="mobile__footer-social row social-web">Мы в социальных сетях:&nbsp;&nbsp;
+            <a href="https://4slovo.kz/vk"><i class="custom-icon-vk-bottom"></i></a>
+            <a href="https://www.facebook.com/4slovo.kz"><i class="custom-icon-fb-bottom"></i></a>
+            <a href="https://www.instagram.com/4slovo_kz/?utm_source=4slovo_main"><i class="custom-icon-inst-bottom"></i></a>
+        </div>
+        <div class="mobile__footer-feedback row social-web">Обратная связь:&nbsp;&nbsp;<a href="mailto:mfo@4slovo.kz"><i class="custom-icon-mail-gray-bottom"></i></a></div>
+        <div class="row">&copy; <?= date('Y') ?> 4slovo.kz - ТОО МФО «Akshabar»<br> с товарным знаком «Честное слово».<br> Все права защищены.</div>
+        <div class="row">Лицензия АРРФР на осуществление микрофинансовой деятельности № 02.21.0020.М от 12.03.2021г.</div>
+        <div class="row">Адрес: 050059, Казахстан, г. Алматы, пр. Аль-Фараби, д.19, н.п. 29а</div>
+        <div class="mobile__footer-bottom">
+            <ul class="mobile__footer-partners">
+                <li><img src="/img_register/icon/shield.png" /></li>
+                <li><img src="/img_register/icon/visa.png" /></li>
+                <li><img src="/img_register/icon/visa2.png" /></li>
+                <li><img src="/img_register/icon/mastercard.png" /></li>
+                <li><img src="/img_register/icon/mastercard2.png" /></li>
+                <li><img src="/img_register/icon/kassa24.png" /></li>
+                <li><img src="/img_register/icon/kazfintech-logonew.png" /></li>
+            </ul>
+        </div>
     </div>
 </div>
 

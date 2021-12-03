@@ -9,7 +9,7 @@ use \yii\helpers\Url;
 
 $this->title = 'Блог';
 ?>
-<div class="get-money-form text-page">
+<div class="get-money-form text-page desktop-version">
     <h1>Блог</h1>
     <ul class="how-its-done news" style="margin-top: 40px; padding-bottom: 0; margin-bottom: 0;">
         <?php foreach ($blogs as $blog) : ?>
