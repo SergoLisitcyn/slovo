@@ -225,17 +225,6 @@ AppAsset::register($this);
         <div class="row">&copy; <?= date('Y') ?> 4slovo.kz - ТОО МФО «Akshabar»<br> с товарным знаком «Честное слово».<br> Все права защищены.</div>
         <div class="row">Лицензия АРРФР на осуществление микрофинансовой деятельности № 02.21.0020.М от 12.03.2021г.</div>
         <div class="row">Адрес: 050059, Казахстан, г. Алматы, пр. Аль-Фараби, д.19, н.п. 29а</div>
-        <div class="mobile__footer-bottom">
-            <ul class="mobile__footer-partners">
-                <li><img src="/img_register/icon/shield.png" /></li>
-                <li><img src="/img_register/icon/visa.png" /></li>
-                <li><img src="/img_register/icon/visa2.png" /></li>
-                <li><img src="/img_register/icon/mastercard.png" /></li>
-                <li><img src="/img_register/icon/mastercard2.png" /></li>
-                <li><img src="/img_register/icon/kassa24.png" /></li>
-                <li><img src="/img_register/icon/kazfintech-logonew.png" /></li>
-            </ul>
-        </div>
     </div>
 </div>
 
