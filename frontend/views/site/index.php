@@ -287,6 +287,7 @@ $this->registerJsFile(Yii::getAlias('@web') . 'js_register/slider.js', [
         <?= Blogs::widget() ?>
     </div>
 <!-- mobile version -->
+    <form class="form" action="register" method="post">
         <section class="mobile_content" id="mobile_main_form_content">
             <div class="mobile_slider_container">
                 <div
@@ -384,5 +385,5 @@ $this->registerJsFile(Yii::getAlias('@web') . 'js_register/slider.js', [
                 </div>
             </div>
         </section>
-
+    </form>
 </div>
