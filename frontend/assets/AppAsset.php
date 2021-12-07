@@ -16,8 +16,12 @@ class AppAsset extends AssetBundle
         'css/notification-banner.css',
         'css/many.css',
         'css_register/mobile.header.css',
+        'css/mobile.header.css', // для переопределения стилей из css_register
+        'css_register/mobile.slider.css',
+        'css/mobile.slider.css', // для переопределения стилей из css_register
         'css_register/mobile.footer.css',
-        'css/desktop.css'
+        'css/desktop.css',
+        'css/mobile.css'
     ];
     public $js = [
         'js_register/test.js',

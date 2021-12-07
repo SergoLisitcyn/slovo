@@ -61,8 +61,8 @@ AppAsset::register($this);
         <div class="mobile__header-nav">
             <a class="mobile__menu-button" href="#"><i class="custom-icon-menu"></i></a>
             <a class="mobile__mail-button" href="/contact_mfo/open.php">
-                <i class="custom-icon-mails" style="vertical-align: middle;width: 35px;height: 35px;background: #ffffff url(/img_register/icon-contact.png) no-repeat 50% 50%;
-                    display: inline-block;margin-top: 5px;">
+                <i class="custom-icon-mails" style="vertical-align: middle;width:48px;height:48px;background: #ffffff url(/img_register/icon-contact.png) no-repeat 50% 50%;
+                    display: inline-block;margin-top:0px;">
                 </i>
             </a>
             <a href="/">
@@ -147,8 +147,8 @@ AppAsset::register($this);
                 'links' => isset($this->params['breadcrumbs']) ? $this->params['breadcrumbs'] : [],
             ]) ?>
             <?= Alert::widget() ?>
-            <?= $content ?>
         </div>
+        <?= $content ?>
     </div>
     <div class="footer footer-height-wrapper desktop-version">
         <div class="width-wrapper">
