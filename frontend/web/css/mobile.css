@@ -1,3 +1,8 @@
 .content .text {
     padding: 0
 }
+
+.mobile_pickvalue__currency .icon.icon--ruble {
+    line-height: unset;
+    width: 20px;
+}

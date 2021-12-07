@@ -293,7 +293,7 @@ $this->registerJsFile(Yii::getAlias('@web') . 'js_register/slider.js', [
                     class="text text--bold text--large text--center text--margin_bottom">
                 Я хочу получить
             </div>
-            <div v-if="isDataLoaded" style="display:none;" v-bind:style="styleObject">
+            <template v-if="isDataLoaded" style="display:none;" v-bind:style="styleObject">
                 <pick-slider
                         class="mobile_pickvalue"
                         v-model="newLoan.amount"
@@ -317,13 +317,13 @@ $this->registerJsFile(Yii::getAlias('@web') . 'js_register/slider.js', [
                         <span class="icon icon--plus"></span>
                     </div>
                 </pick-slider>
-            </div>
+            </template>
             <div class="text text--dark_color text--light text--center">
                 от
                 <?php  echo ($conditions[0]['amountMin']/1000) ?> до
                 <?php echo ($conditions[0]['amountMax']/1000) ?> тыс. тенге
             </div>
-            <div class="text text--margin_bottom_16"></div>
+            <div class="text text--margin_bottom_32"></div>
             <div class="text text--bold text--large text--center">На срок</div>
             <template v-if="isDataLoaded" :style="styleObject">
                 <pick-slider
@@ -353,15 +353,7 @@ $this->registerJsFile(Yii::getAlias('@web') . 'js_register/slider.js', [
                     </div>
                 </pick-slider>
             </template>
-            <template v-if="isTermSliderStartVisible">
-                <div class="text text--dark_color text--light text--center">
-                    от {{newLoan.loanConditions.conditions[0].termMin}} до
-                    {{newLoan.loanConditions.conditions[0].termMax}}
-                    {{newLoan.loanConditions.conditions[0].termMax |
-                    pluralizeRu("день","дня","дней") }}
-                </div>
-            </template>
-            <div class="text text--margin_bottom_16"></div>
+            <div class="text text--margin_bottom_32"></div>
             <div class="text text--center text--margin_bottom">
                 <template>
                     К возврату
