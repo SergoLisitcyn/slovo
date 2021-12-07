@@ -216,15 +216,63 @@ AppAsset::register($this);
     </div>
 
     <div class="mobile__footer">
-        <div class="mobile__footer-social row social-web">Мы в социальных сетях:&nbsp;&nbsp;
-            <a href="https://4slovo.kz/vk"><i class="custom-icon-vk-bottom"></i></a>
-            <a href="https://www.facebook.com/4slovo.kz"><i class="custom-icon-fb-bottom"></i></a>
-            <a href="https://www.instagram.com/4slovo_kz/?utm_source=4slovo_main"><i class="custom-icon-inst-bottom"></i></a>
+        <div class="menu_footer">
+            <h4 class="menu_footer_title">О СЕРВИСЕ</h4>
+            <ul>
+                <li><a href="/blog/">Блог</a></li>
+                <li><a href="/actions/">Акции</a></li>
+                <li><a href="/news/">Новости</a></li>
+                <li><a href="/press/">СМИ о нас</a></li>
+                <li><a href="/kak-poluchit-zaym/">Как получить деньги</a></li>
+                <li><a href="/vozvrat-zaima/">Как погасить микрокредит</a></li>
+                <li><a href="/faq/">Вопросы и ответы</a></li>
+                <li><a href="/vacancies/">Вакансии</a></li>
+                <li><a href="/privileges/">Постоянным клиентам</a></li>
+                <li><a href="/partners/">Партнерам</a></li>
+                <li><a href="/friends/">Приглашайте друзей</a></li>
+            </ul>
         </div>
-        <div class="mobile__footer-feedback row social-web">Обратная связь:&nbsp;&nbsp;<a href="mailto:mfo@4slovo.kz"><i class="custom-icon-mail-gray-bottom"></i></a></div>
-        <div class="row">&copy; <?= date('Y') ?> 4slovo.kz - ТОО МФО «Akshabar»<br> с товарным знаком «Честное слово».<br> Все права защищены.</div>
-        <div class="row">Лицензия АРРФР на осуществление микрофинансовой деятельности № 02.21.0020.М от 12.03.2021г.</div>
-        <div class="row">Адрес: 050059, Казахстан, г. Алматы, пр. Аль-Фараби, д.19, н.п. 29а</div>
+        <div class="menu_footer">
+            <h4 class="menu_footer_title">О НАС</h4>
+            <ul>
+                <li><a href="/about/">О компании</a></li>
+                <li><a href="/requisitions/">Реквизиты</a></li>
+                <li><a href="/pravila/">Правила</a></li>
+                <li><a href="/usluga/">Услуга консультирования</a></li>
+                <li><a href="/usloviya/">Соглашение на обработку перс.данных</a></li>
+                <li><a href="/otchetnost/">Фин.отчетность</a></li>
+            </ul>
+        </div>
+        <div class="menu_footer">
+            <h4 class="menu_footer_title">КОНТАКТЫ</h4>
+            <ul>
+                <li>
+                    <i class="fas fa-envelope" style="color:#43B05C;font-size:18px;vertical-align:middle;"></i>
+                    <a href="mailto:mfo@4slovo.kz" style="margin-left:12px;">Обратная связь</a>
+                </li>
+                <li>
+                    <i class="fas fa-phone" style="color:#43B05C;font-size:18px;vertical-align:middle;"></i>
+                    <a href="tel:+77273393404" style="margin-left:12px;">+7 (727) 3393404</a>
+                </li>
+                <li>
+                    <i class="fas fa-at" style="color:#43B05C;font-size:18px;vertical-align:middle;"></i>
+                    <a href="mailto:mfo@4slovo.kz" style="margin-left:12px;">mfo@4slovo.kz</a>
+                </li>
+            </ul>
+        </div>
+        <div class="row" style="margin-top:6px;margin-bottom:0px;"><span>Мы в социальных сетях:</span>
+            <div>
+                <a href="https://4slovo.kz/vk" aria-label="vk"><i class="custom-icon-vk-bottom"></i></a>
+                <a href="https://www.facebook.com/4slovo.kz" aria-label="fb"><i class="custom-icon-fb-bottom"></i></a>
+                <a href="https://www.instagram.com/4slovo_kz/?utm_source=4slovo_main" aria-label="instagram"><i class="custom-icon-inst-bottom"></i></a>
+            </div>
+        </div>        
+        <div class="row">©2021 4slovo.kz - ТОО МФО «Akshabar»<br> с товарным знаком «Честное слово».<br> Все права защищены.</div>
+        <div class="row"><a href="/license/" style="text-decoration:none;color:#43B05C;">Лицензия</a> № 02.21.0020.М от 12.03.2021г., выданная Агентством Республики Казахстан по регулированию и развитию финансового рынка.</div>
+        <div class="row">Адрес: 050059, Казахстан, г. Алматы, пр. Аль-Фараби, д.19, н.п. 29а</div>        
+        <div class="row"><p>ТОО «МФО «Akshabar» использует Сookie (файлы с данными о прошлых посещениях сайта) для персонализации сервисов и удобства пользователей. Оставаясь на сайте вы даете <a href="/soglashenie" style="color: grey">согласие на обработку  данных</a></p></div>
+        <div class="row">Подробную информацию по правам потребителей финансовых услуг можно получить на сайтах Агентства РК по регулированию и развитию финансового рынка <a href="https://finreg.kz/" rel="noreferrer noopener" target="_blank">https://finreg.kz/</a> и <a href="https://fingramota.kz/ru" rel="noreferrer noopener" target="_blank">https://fingramota.kz/ru</a></div>
+        <div style="height:10px;"></div>        
     </div>
 </div>
 
