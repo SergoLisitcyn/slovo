@@ -2188,7 +2188,7 @@ table th[class*="span"],
     width: 14px;
     height: 14px;
     margin-top: 1px;
-    *margin-right: .3em;
+    /* margin-right: .3em; */
     line-height: 14px;
     vertical-align: text-top;
     background-image: url("../img/glyphicons-halflings.png");
@@ -7694,6 +7694,7 @@ img {
     height: 81px;
     background: url(/images/header-mask.png) repeat-x 50% 100%;
     margin: 0 0 -66px 0;
+    min-width: 950px;
 }
 .header .given {
     color: #4d4d4e;
@@ -8005,6 +8006,7 @@ img {
     text-align: center;
     position: relative;
     z-index: 10;
+    min-width: 950px;
 }
 .promo-slider .slider {
     height: 518px;
@@ -8562,6 +8564,7 @@ ul.how-its-done2 img {
     background-size: contain;
     height: 270px;
     color: #404041;
+    min-width: 950px;
 }
 
 .footer-height-wrapper {
