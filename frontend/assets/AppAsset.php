@@ -20,6 +20,7 @@ class AppAsset extends AssetBundle
         'css_register/mobile.slider.css',
         'css/mobile.slider.css', // для переопределения стилей из css_register
         'css_register/mobile.footer.css',
+        'css_register/mobile.controlgroup.css',
         'css/desktop.css',
         'css/mobile.css'
     ];

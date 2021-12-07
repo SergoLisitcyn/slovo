@@ -1,5 +1,15 @@
 .mobile__divider {
     margin-top: 0px;
     margin-bottom: 0px;
-  }
+}
+
+.mobile_content {
+    display: none;
+}
+
+@media screen and (max-width: 600px) {
+    .mobile_content {
+        display: block;
+    }
+}
   

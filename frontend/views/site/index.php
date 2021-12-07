@@ -287,83 +287,102 @@ $this->registerJsFile(Yii::getAlias('@web') . 'js_register/slider.js', [
         <?= Blogs::widget() ?>
     </div>
 <!-- mobile version -->
-    <section class="mobile_content" id="mobile_main_form_content">
-        <div class="mobile_slider_container">
-            <div
-                    class="text text--bold text--large text--center text--margin_bottom">
-                Я хочу получить
-            </div>
-            <template v-if="isDataLoaded" style="display:none;" v-bind:style="styleObject">
-                <pick-slider
-                        class="mobile_pickvalue"
-                        v-model="newLoan.amount"
-                        @sliderposition="$event => sliderChange($event, 'amount')"
-                        :sliderposition="amountSliderPosition"
-                        :min="1"
-                        :max="sliderMax.amount"
-                        :step="1">
-                    <div class="mobile_pickvalue__minus">
-                        <span class="icon icon--minus"></span>
-                    </div>
-                    <div class="mobile_pickvalue__line"></div>
-                    <div class="mobile_pickvalue__valuebox">
-                        <div class="mobile_pickvalue__value" :style="{color:promoTextColor}">{{newLoan.amount}}</div>
-                        <div class="mobile_pickvalue__currency" :style="{color:promoTextColor}">
-                            <span class="icon icon--ruble"></span>
+        <section class="mobile_content" id="mobile_main_form_content">
+            <div class="mobile_slider_container">
+                <div
+                        class="text text--bold text--large text--center text--margin_bottom">
+                    Я хочу получить
+                </div>
+                <template v-if="isDataLoaded" style="display:none;" v-bind:style="styleObject">
+                    <pick-slider
+                            class="mobile_pickvalue"
+                            v-model="newLoan.amount"
+                            @sliderposition="$event => sliderChange($event, 'amount')"
+                            :sliderposition="amountSliderPosition"
+                            :min="1"
+                            :max="sliderMax.amount"
+                            :step="1">
+                        <div class="mobile_pickvalue__minus">
+                            <span class="icon icon--minus"></span>
                         </div>
-                    </div>
-                    <div class="mobile_pickvalue__line"></div>
-                    <div class="mobile_pickvalue__plus">
-                        <span class="icon icon--plus"></span>
-                    </div>
-                </pick-slider>
-            </template>
-            <div class="text text--dark_color text--light text--center">
-                от
-                <?php  echo ($conditions[0]['amountMin']/1000) ?> до
-                <?php echo ($conditions[0]['amountMax']/1000) ?> тыс. тенге
-            </div>
-            <div class="text text--margin_bottom_32"></div>
-            <div class="text text--bold text--large text--center">На срок</div>
-            <template v-if="isDataLoaded" :style="styleObject">
-                <pick-slider
-                        class="mobile_pickvalue mobile_pickvalue--dark"
-                        v-model="newLoan.term"
-                        @sliderposition="$event => sliderChange($event, 'term')"
-                        :sliderposition="termSliderPosition"
-                        :min="1"
-                        :max="sliderMax.term"
-                        :step="1"
-                >
-                    <div class="mobile_pickvalue__minus">
-                        <span class="icon icon--minus_dark"></span>
-                    </div>
-                    <div class="mobile_pickvalue__line"></div>
-                    <div class="mobile_pickvalue__valuebox">
-                        <div class="mobile_pickvalue__value">{{newLoan.term}}</div>
-                        <div
-                                class="mobile_pickvalue__currency mobile_pickvalue__currency--little"
-                        >
-                            {{newLoan.term | pluralizeRu("день", "дня", "дней")}}
+                        <div class="mobile_pickvalue__line"></div>
+                        <div class="mobile_pickvalue__valuebox">
+                            <div class="mobile_pickvalue__value" :style="{color:promoTextColor}">{{newLoan.amount}}</div>
+                            <div class="mobile_pickvalue__currency" :style="{color:promoTextColor}">
+                                <span class="icon icon--ruble"></span>
+                            </div>
                         </div>
-                    </div>
-                    <div class="mobile_pickvalue__line"></div>
-                    <div class="mobile_pickvalue__plus">
-                        <span class="icon icon--plus_dark"></span>
-                    </div>
-                </pick-slider>
-            </template>
-            <div class="text text--margin_bottom_32"></div>
-            <div class="text text--center text--margin_bottom">
-                <template>
-                    К возврату
-                    <template>
-                        <span class="text text--bold">{{newLoanReturn.amount}}</span>
-                        <br />до
-                        <span class="text text--bold">{{newLoanReturn.date | formatDateLocale }} года</span>
-                    </template>
+                        <div class="mobile_pickvalue__line"></div>
+                        <div class="mobile_pickvalue__plus">
+                            <span class="icon icon--plus"></span>
+                        </div>
+                    </pick-slider>
                 </template>
+                <div class="text text--dark_color text--light text--center">
+                    от
+                    <?php  echo ($conditions[0]['amountMin']/1000) ?> до
+                    <?php echo ($conditions[0]['amountMax']/1000) ?> тыс. тенге
+                </div>
+                <div class="text text--margin_bottom_32"></div>
+                <div class="text text--bold text--large text--center">На срок</div>
+                <template v-if="isDataLoaded" :style="styleObject">
+                    <pick-slider
+                            class="mobile_pickvalue mobile_pickvalue--dark"
+                            v-model="newLoan.term"
+                            @sliderposition="$event => sliderChange($event, 'term')"
+                            :sliderposition="termSliderPosition"
+                            :min="1"
+                            :max="sliderMax.term"
+                            :step="1"
+                    >
+                        <div class="mobile_pickvalue__minus">
+                            <span class="icon icon--minus_dark"></span>
+                        </div>
+                        <div class="mobile_pickvalue__line"></div>
+                        <div class="mobile_pickvalue__valuebox">
+                            <div class="mobile_pickvalue__value">{{newLoan.term}}</div>
+                            <div
+                                    class="mobile_pickvalue__currency mobile_pickvalue__currency--little"
+                            >
+                                {{newLoan.term | pluralizeRu("день", "дня", "дней")}}
+                            </div>
+                        </div>
+                        <div class="mobile_pickvalue__line"></div>
+                        <div class="mobile_pickvalue__plus">
+                            <span class="icon icon--plus_dark"></span>
+                        </div>
+                    </pick-slider>
+                </template>
+                <template v-if="isTermSliderStartVisible">
+                    <div class="text text--dark_color text--light text--center">
+                        от {{newLoan.loanConditions.conditions[0].termMin}} до
+                        {{newLoan.loanConditions.conditions[0].termMax}}
+                        {{newLoan.loanConditions.conditions[0].termMax |
+                        pluralizeRu("день","дня","дней") }}
+                    </div>
+                </template>
+                <div class="text text--margin_bottom_16"></div>
+                <div class="text text--center text--margin_bottom">
+                    <template>
+                        К возврату
+                        <template>
+                            <span class="text text--bold">{{newLoanReturn.amount}}</span>
+                            <br />до
+                            <span class="text text--bold">{{newLoanReturn.date | formatDateLocale }} года</span>
+                        </template>
+                    </template>
+                </div>
+                <div class="text text--margin_bottom_32"></div>
+                <div class="mobile-mobile-button" style="display:flex;padding: 16px 0px 0px;justify-content:center;">
+                    <input
+                            type="submit"
+                            id="mobile-submit"
+                            value="Получить деньги"
+                            class="big-button big-button-green"
+                            style="width:288px;"
+                    />
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
+
 </div>
