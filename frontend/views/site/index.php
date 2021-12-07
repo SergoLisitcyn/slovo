@@ -287,7 +287,7 @@ $this->registerJsFile(Yii::getAlias('@web') . 'js_register/slider.js', [
         <?= Blogs::widget() ?>
     </div>
 <!-- mobile version -->
-    <form class="form" action="register" method="post">
+    <form class="mobile_form" action="register" method="post">
         <section class="mobile_content" id="mobile_main_form_content">
             <div class="mobile_slider_container">
                 <div
@@ -378,7 +378,7 @@ $this->registerJsFile(Yii::getAlias('@web') . 'js_register/slider.js', [
                     <input
                             type="submit"
                             id="mobile-submit"
-                            value="Получить деньги"
+                            value="Получить деньги онлайн"
                             class="big-button big-button-green"
                             style="width:288px;"
                     />
@@ -386,4 +386,15 @@ $this->registerJsFile(Yii::getAlias('@web') . 'js_register/slider.js', [
             </div>
         </section>
     </form>
+    <div class="mobile__footer-bottom">
+        <ul class="mobile__footer-partners">
+            <li><img src="/img_register/icon/shield.png" /></li>
+            <li><img src="/img_register/icon/visa.png" /></li>
+            <li><img src="/img_register/icon/visa2.png" /></li>
+            <li><img src="/img_register/icon/mastercard.png" /></li>
+            <li><img src="/img_register/icon/mastercard2.png" /></li>
+            <li><img src="/img_register/icon/kassa24.png" /></li>
+            <li><img src="/img_register/icon/kazfintech-logonew.png" /></li>
+        </ul>
+    </div>
 </div>
