@@ -11,12 +11,16 @@
     margin: 0;
 }
 
-.mobile__footer div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, textarea, p, blockquote, th, td {
+.mobile__footer div, .mobile__footer ul, .mobile__footer li, .mobile__footer h4 {
     padding: 0;
     margin: 0;
 }
 
-.mobile__footer ol, ul {
+.mobile__footer > div.row {
+    width: 300px;
+}
+
+.mobile__footer ol, .mobile__footer ul {
     list-style: none;
 }
 
@@ -38,4 +42,14 @@
 
 .mobile__footer .menu_footer_title {
     font-weight: bold;
+}
+
+.mobile__footer-bottom {
+    display: none;
+}
+
+@media screen and (max-width: 600px) {
+    .mobile__footer-bottom {
+        display: block;
+    }
 }

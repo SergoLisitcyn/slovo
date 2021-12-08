@@ -8064,6 +8064,9 @@ img {
 .content .text {
     padding: 20px 0 20px 0;
 }
+.content .text-page {
+    margin: auto;
+}
 
 a.scrollbutton {
     display: block;
@@ -8167,6 +8170,7 @@ ul.how-its-done2 {
     padding: 0;
     display: flex;
     justify-content: space-between;
+    margin-top: 155px;
 }
 ul.how-its-done2 li {
     list-style: none;
@@ -8587,6 +8591,20 @@ ul.how-its-done2 img {
 
 .footer .copy {
     position: absolute; right: 0; top: 260px; text-align: right;
+}
+
+.footer .oferta-fin-regulator {
+    color: gray;
+    position: absolute;
+    right: 0;
+    top: 385px;
+}
+
+.footer .oferta-cookie {
+    color: gray;
+    position: absolute;
+    right: 7px;
+    top: 435px;
 }
 
 .footer-menu-wrapper {
@@ -10290,3 +10308,45 @@ Author URI: http://dev7studios.com
     vertical-align: middle; }
 
 
+@media screen and (min-width: 601px) {
+    .responsitive-text-page {
+        margin: auto;
+        margin-bottom: 54px;
+        font-size: 18px !important;
+        color: #404041;
+        border: 4px solid #7dc587;
+        border-radius: 5px;
+        background: white;
+        width: 772px;
+        padding: 20px 85px 25px 85px;
+    }
+    
+    .responsitive-text-page h1 {
+        text-align: center;
+        font-size: 28px;
+        margin: 0 0 25px 0;
+    }
+    
+    .responsitive-text-page p {
+        margin: 15px 0 5px 0;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .responsitive-text-page {
+        margin: 0 16px;
+        font-size: 14px;
+        margin-bottom: 32px;
+    }
+    .responsitive-text-page h1 {
+        text-align: center;
+        font-size: 22px;
+        font-weight: bold;
+        text-transform: uppercase;
+        margin: 6px 16px 4px;
+    }
+    .responsitive-text-page .adm-img {
+        width: 288px !important;
+        height: auto !important;
+    }    
+}

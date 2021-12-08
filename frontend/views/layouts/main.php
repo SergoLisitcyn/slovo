@@ -169,23 +169,24 @@ AppAsset::register($this);
             </div>
 
             <ul class="menu">
-                <li><a href="/page/about">О компании</a></li>
-                <li><a href="/page/requisitions">Реквизиты</a></li>
-                <li><a href="/page/pravila">Правила</a></li>
-                <li><a href="/page/usloviya">Соглашение на обработку персональных данных</a></li>
-                <li><a href="/page/usluga">Услуга консультирования</a></li>
-                <li><a href="/blog">Блог</a></li>
-                <li><a href="/actions">Акции</a></li>
-                <li><a href="/news">Новости</a></li>
-                <li><a href="/page/press">СМИ о нас</a></li>
-                <li><a href="/page/kak-poluchit-zaym">Как получить деньги</a></li>
-                <li><a href="/page/vozvrat-zaima">Как погасить микрокредит</a></li>
-                <li><a href="/page/protection-of-consumer-rights">Вопросы и ответы</a></li>
-                <li><a href="/page/privileges">Постоянным клиентам</a></li>
-                <li><a href="/page/partners">Партнерам</a></li>
-                <li><a href="/page/friends">Приглашайте друзей</a></li>
-                <li><a href="/page/usloviya">Условия</a></li>
-            </ul>
+				<li><a href="/page/about/">О компании</a></li>
+				<li><a href="/page/requisitions/">Реквизиты</a></li>
+				<li><a href="/page/pravila/">Правила</a></li>
+				<li><a href="/page/usloviya/">Соглашение на обработку персональных данных</a></li>
+				<li><a href="/page/otchetnost/">Фин.отчетность</a></li>
+				<li><a href="/page/usluga/">Услуга консультирования</a></li>
+				<li><a href="/blog/">Блог</a></li>
+				<li><a href="/actions/">Акции</a></li>
+				<li><a href="/news/">Новости</a></li>
+				<li><a href="/page/press/">СМИ о нас</a></li>
+				<li><a href="/page/kak-poluchit-zaym/">Как получить деньги</a></li>
+				<li><a href="/page/vozvrat-zaima/">Как погасить микрокредит</a></li>
+				<li><a href="/page/faq/">Вопросы и ответы</a></li>
+				<li><a href="/page/vacancies/">Вакансии</a></li>
+				<li><a href="/page/privileges/">Постоянным клиентам</a></li>
+				<li><a href="/page/partners/">Партнерам</a></li>
+				<li><a href="/page/friends/">Приглашайте друзей</a></li>
+			</ul>            
 
             <div class="social">Мы в социальных сетях —
                 <a href="https://vk.com/4slovo_kz" target="_blank"><img src="/images/vk.png" alt="вконтакте" width="30" height="30" /></a>
@@ -199,6 +200,15 @@ AppAsset::register($this);
                 выданная Агентством Республики Казахстан по регулированию и развитию финансового рынка. <br />
                 Адрес: 050059, Казахстан, г. Алматы, пр. Аль-Фараби, д.19, н.п. 29а <br />
             </div>
+
+            <div class="oferta-fin-regulator">Подробную информацию по правам потребителей финансовых услуг можно получить на сайтах Агентства <br> РК по регулированию и развитию финансового рынка <a href="https://finreg.kz/" rel="noreferrer noopener" target="_blank">https://finreg.kz/</a> и <a href="https://fingramota.kz/ru" rel="noreferrer noopener" target="_blank">https://fingramota.kz/ru</a>
+            </div>
+
+            <div class="oferta-cookie">
+                <p>ТОО «МФО «Akshabar» использует Сookie (файлы с данными о прошлых посещениях сайта) для <br> 
+                    персонализации сервисов и удобства пользователей. Оставаясь на сайте, вы даете <a href="/page/soglashenie">согласие на обработку <br> данных</a>
+                </p>
+			</div>
 
         </div>
     </div>
@@ -270,7 +280,7 @@ AppAsset::register($this);
         <div class="row">©2021 4slovo.kz - ТОО МФО «Akshabar»<br> с товарным знаком «Честное слово».<br> Все права защищены.</div>
         <div class="row"><a href="/license/" style="text-decoration:none;color:#43B05C;">Лицензия</a> № 02.21.0020.М от 12.03.2021г., выданная Агентством Республики Казахстан по регулированию и развитию финансового рынка.</div>
         <div class="row">Адрес: 050059, Казахстан, г. Алматы, пр. Аль-Фараби, д.19, н.п. 29а</div>        
-        <div class="row"><p>ТОО «МФО «Akshabar» использует Сookie (файлы с данными о прошлых посещениях сайта) для персонализации сервисов и удобства пользователей. Оставаясь на сайте вы даете <a href="/soglashenie" style="color: grey">согласие на обработку  данных</a></p></div>
+        <div class="row"><p>ТОО «МФО «Akshabar» использует Сookie (файлы с данными о прошлых посещениях сайта) для персонализации сервисов и удобства пользователей. Оставаясь на сайте вы даете <a href="/page/soglashenie" style="color: grey">согласие на обработку  данных</a></p></div>
         <div class="row">Подробную информацию по правам потребителей финансовых услуг можно получить на сайтах Агентства РК по регулированию и развитию финансового рынка <a href="https://finreg.kz/" rel="noreferrer noopener" target="_blank">https://finreg.kz/</a> и <a href="https://fingramota.kz/ru" rel="noreferrer noopener" target="_blank">https://fingramota.kz/ru</a></div>
         <div style="height:10px;"></div>        
     </div>
