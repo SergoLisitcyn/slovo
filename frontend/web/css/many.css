@@ -8064,6 +8064,9 @@ img {
 .content .text {
     padding: 20px 0 20px 0;
 }
+.content .text-page {
+    margin: auto;
+}
 
 a.scrollbutton {
     display: block;
@@ -8167,6 +8170,7 @@ ul.how-its-done2 {
     padding: 0;
     display: flex;
     justify-content: space-between;
+    margin-top: 155px;
 }
 ul.how-its-done2 li {
     list-style: none;
@@ -8587,6 +8591,20 @@ ul.how-its-done2 img {
 
 .footer .copy {
     position: absolute; right: 0; top: 260px; text-align: right;
+}
+
+.footer .oferta-fin-regulator {
+    color: gray;
+    position: absolute;
+    right: 0;
+    top: 385px;
+}
+
+.footer .oferta-cookie {
+    color: gray;
+    position: absolute;
+    right: 7px;
+    top: 435px;
 }
 
 .footer-menu-wrapper {
