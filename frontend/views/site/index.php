@@ -362,7 +362,7 @@ $this->registerJsFile(Yii::getAlias('@web') . 'js_register/slider.js', [
                         pluralizeRu("день","дня","дней") }}
                     </div>
                 </template>
-                <div class="text text--margin_bottom_16"></div>
+                <div class="text text--margin_bottom_32"></div>
                 <div class="text text--center text--margin_bottom">
                     <template>
                         К возврату
@@ -380,7 +380,7 @@ $this->registerJsFile(Yii::getAlias('@web') . 'js_register/slider.js', [
                             id="mobile-submit"
                             value="Получить деньги онлайн"
                             class="big-button big-button-green"
-                            style="width:288px;"
+                            style="width:288px;font-family: 'PT Sans', 'Trebuchet MS', Helvetica, sans-serif;"
                     />
                 </div>
             </div>

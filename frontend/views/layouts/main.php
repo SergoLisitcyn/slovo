@@ -252,7 +252,7 @@ AppAsset::register($this);
                 <li><a href="/friends/">Приглашайте друзей</a></li>
             </ul>
         </div>
-        <div class="menu_footer">
+        <div class="menu_footer" style="margin-top: 10px;">
             <h4 class="menu_footer_title">О НАС</h4>
             <ul>
                 <li><a href="/about/">О компании</a></li>
@@ -263,7 +263,8 @@ AppAsset::register($this);
                 <li><a href="/otchetnost/">Фин.отчетность</a></li>
             </ul>
         </div>
-        <div class="menu_footer">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css?&display=swap" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" rel="preload" crossorigin="anonymous">
+        <div class="menu_footer" style="margin-top: 10px;">
             <h4 class="menu_footer_title">КОНТАКТЫ</h4>
             <ul>
                 <li>
