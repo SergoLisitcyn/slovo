@@ -48,6 +48,12 @@ AppAsset::register($this);
 <body>
 <?php $this->beginBody() ?>
 
+<div id="cookie_alert">
+  <span id="close-alert" class='close'>&#10006;</span>
+  <div class="alert-heading">Этот сайт использует файлы Cookie. Продолжая просматривать данный сайт, Вы соглашаетесь с использованием Cookie - файлов. 
+  <a href="/page/cookiespolicy" style="text-decoration: none;color: #43B05C;">Узнать подробнее</a></div>
+</div>
+
 <div class="page-wrapper">
 <div class="mobile__header">
         <ul class="mobile__nav-top" style="display: none">
