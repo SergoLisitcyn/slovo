@@ -20,6 +20,11 @@
         position:absolute;
         top:5px;
         right:12px;
-        font-size: 16px;        
+        font-size: 16px;
+        opacity: 1;
+        color: #888888;
+    }
+    #cookie_alert a {
+        border: none;
     }
 }
