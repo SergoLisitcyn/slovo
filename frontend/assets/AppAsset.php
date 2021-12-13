@@ -32,7 +32,8 @@ class AppAsset extends AssetBundle
         'js_register/mobile_menu_slide.js',
         'js_register/bootstrap.min.js',
         'js_register/syncStateManager.js',
-        'js_register/modal.js'
+        'js_register/modal.js',
+        'js/cookie.js'
 //        'js/minified.css',
 //        'css/notification-banner.css',
     ];

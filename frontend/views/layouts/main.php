@@ -21,7 +21,7 @@ AppAsset::register($this);
     <meta charset="<?= Yii::$app->charset ?>">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     
-    <meta name="viewport" content="width=device-width, initial-scale=1>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <?php $this->registerCsrfMetaTags() ?>
     <title><?= Html::encode($this->title) ?></title>
 
@@ -48,14 +48,18 @@ AppAsset::register($this);
 <body>
 <?php $this->beginBody() ?>
 
-<div id="cookie_alert">
-  <span id="close-alert" class='close'>&#10006;</span>
-  <div class="alert-heading">Этот сайт использует файлы Cookie. Продолжая просматривать данный сайт, Вы соглашаетесь с использованием Cookie - файлов. 
-  <a href="/page/cookiespolicy" style="text-decoration: none;color: #43B05C;">Узнать подробнее</a></div>
-</div>
+<?php
+    if(!isset($_COOKIE['CookieNoticeDisabled'])): ?>
+    <!-- Информация об использовании cookies -->
+    <div id="cookie_alert">
+    <span id="close-alert" class='close'>&#10006;</span>
+    <div class="alert-heading">Этот сайт использует файлы Cookie. Продолжая просматривать данный сайт, Вы соглашаетесь с использованием Cookie - файлов. 
+    <a href="/page/cookiespolicy" style="text-decoration: none;color: #43B05C;">Узнать подробнее</a></div>
+    </div>
+<?php endif; ?>
 
 <div class="page-wrapper">
-<div class="mobile__header">
+    <div class="mobile__header">
         <ul class="mobile__nav-top" style="display: none">
             <li><a href="/kak-poluchit-zaym/" class="f">Как это работает</a></li>
             <li><a href="/privileges/">Привилегии</a></li>

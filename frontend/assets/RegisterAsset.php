@@ -26,7 +26,8 @@ class RegisterAsset extends AssetBundle
         'css_register/ui_custom.css',
         'css_register/loan.css',
         'css_register/card.css',
-        'css_register/bootstrap.utils.css'
+        'css_register/bootstrap.utils.css',
+        'css/cookie.css'
     ];
     public $js = [
 //        'js/js_register/common.js',
@@ -36,7 +37,8 @@ class RegisterAsset extends AssetBundle
         'js_register/mobile_menu_slide.js',
         'js_register/bootstrap.min.js',
         'js_register/syncStateManager.js',
-        'js_register/modal.js'
+        'js_register/modal.js',
+        'js/cookie.js'
     ];
     public $depends = [
 //        'yii\web\YiiAsset',
