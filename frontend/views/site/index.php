@@ -224,13 +224,9 @@ $this->registerJsFile(Yii::getAlias('@web') . 'js_register/slider.js', [
                 <span>Как это работает</span>
             </h2>
             <ul class="how-its-done">
-                <li><img alt="" src="images/big-icon-a.png" /><strong>Оформите заявку</strong> на микрокредит<br />&nbsp;</li>
-                <li><img alt="" src="images/big-icon-b.png" /><strong>Заявка рассматривается</strong> всего за пять минут<br />&nbsp;</li>
-                <li><img alt="" src="images/big-icon-c.png" /><strong>Моментально</strong> деньги поступают на счёт<br />
-                    <a href="/page/usloviya">
-                        Узнать подробнее об условиях
-                    </a>
-                </li>
+                <li><img alt="" src="images/big-icon-a.png" /><strong>Оформите заявку</strong> на микрокредит</li>
+                <li><img alt="" src="images/big-icon-b.png" /><strong>Заявка рассматривается</strong> всего за пять минут</li>
+                <li><img alt="" src="images/big-icon-c.png" /><strong>Моментально</strong> деньги поступают на счёт</li>
                 <li class="filler"></li>
             </ul>
             <?= Review::widget() ?>
