@@ -21,7 +21,7 @@ AppAsset::register($this);
     <meta charset="<?= Yii::$app->charset ?>">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     
-    <meta name="viewport" content="width=device-width, initial-scale=1>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <?php $this->registerCsrfMetaTags() ?>
     <title><?= Html::encode($this->title) ?></title>
 
@@ -48,8 +48,18 @@ AppAsset::register($this);
 <body>
 <?php $this->beginBody() ?>
 
+<?php
+    if(!isset($_COOKIE['CookieNoticeDisabled'])): ?>
+    <!-- Информация об использовании cookies -->
+    <div id="cookie_alert">
+    <span id="close-alert" class='close'>&#10006;</span>
+    <div class="alert-heading">Этот сайт использует файлы Cookie. Продолжая просматривать данный сайт, Вы соглашаетесь с использованием Cookie - файлов. 
+    <a href="/page/cookiespolicy" style="text-decoration: none;color: #43B05C;">Узнать подробнее</a></div>
+    </div>
+<?php endif; ?>
+
 <div class="page-wrapper">
-<div class="mobile__header">
+    <div class="mobile__header">
         <ul class="mobile__nav-top" style="display: none">
             <li><a href="/kak-poluchit-zaym/" class="f">Как это работает</a></li>
             <li><a href="/privileges/">Привилегии</a></li>
@@ -195,19 +205,16 @@ AppAsset::register($this);
             </div>
 
             <div class="copy">
-                &copy; 2021 4slovo.kz - ТОО «МФО «Akshabar» с товарным знаком «Честное слово». Все права защищены.<br />
-                Лицензия № 02.21.0020.М от 12.03.2021г., <br />
-                выданная Агентством Республики Казахстан по регулированию и развитию финансового рынка. <br />
-                Адрес: 050059, Казахстан, г. Алматы, пр. Аль-Фараби, д.19, н.п. 29а <br />
+                Лицензия № 02.21.0020.М от 12.03.2021г., выданная Агентством Республики Казахстан по регулированию и развитию финансового рынка. Адрес: 050059, Казахстан, г. Алматы, пр. Аль-Фараби, д.19, н.п. 29а <br /><br />
+                &copy; 2021 4slovo.kz - ТОО «МФО «Akshabar» с товарным знаком «Честное слово». Все права защищены.
             </div>
 
-            <div class="oferta-fin-regulator">Подробную информацию по правам потребителей финансовых услуг можно получить на сайтах Агентства <br> РК по регулированию и развитию финансового рынка <a href="https://finreg.kz/" rel="noreferrer noopener" target="_blank">https://finreg.kz/</a> и <a href="https://fingramota.kz/ru" rel="noreferrer noopener" target="_blank">https://fingramota.kz/ru</a>
+            <div class="oferta-fin-regulator">
+                Подробную информацию по правам потребителей финансовых услуг можно получить на сайтах Агентства РК по регулированию и развитию финансового рынка <a href="https://finreg.kz/" rel="noreferrer noopener" target="_blank">https://finreg.kz/</a> и <a href="https://fingramota.kz/ru" rel="noreferrer noopener" target="_blank">https://fingramota.kz/ru</a>
             </div>
 
             <div class="oferta-cookie">
-                <p>ТОО «МФО «Akshabar» использует Сookie (файлы с данными о прошлых посещениях сайта) для <br> 
-                    персонализации сервисов и удобства пользователей. Оставаясь на сайте, вы даете <a href="/page/soglashenie">согласие на обработку <br> данных</a>
-                </p>
+                ТОО «МФО «Akshabar» использует Сookie (файлы с данными о прошлых посещениях сайта) для персонализации сервисов и удобства пользователей. Оставаясь на сайте, вы даете <a href="/page/soglashenie">согласие на обработку данных</a>
 			</div>
 
         </div>
@@ -242,7 +249,7 @@ AppAsset::register($this);
                 <li><a href="/friends/">Приглашайте друзей</a></li>
             </ul>
         </div>
-        <div class="menu_footer">
+        <div class="menu_footer" style="margin-top: 10px;">
             <h4 class="menu_footer_title">О НАС</h4>
             <ul>
                 <li><a href="/about/">О компании</a></li>
@@ -253,7 +260,8 @@ AppAsset::register($this);
                 <li><a href="/otchetnost/">Фин.отчетность</a></li>
             </ul>
         </div>
-        <div class="menu_footer">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css?&display=swap" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" rel="preload" crossorigin="anonymous">
+        <div class="menu_footer" style="margin-top: 10px;">
             <h4 class="menu_footer_title">КОНТАКТЫ</h4>
             <ul>
                 <li>
@@ -277,11 +285,11 @@ AppAsset::register($this);
                 <a href="https://www.instagram.com/4slovo_kz/?utm_source=4slovo_main" aria-label="instagram"><i class="custom-icon-inst-bottom"></i></a>
             </div>
         </div>        
-        <div class="row">©2021 4slovo.kz - ТОО МФО «Akshabar»<br> с товарным знаком «Честное слово».<br> Все права защищены.</div>
-        <div class="row"><a href="/license/" style="text-decoration:none;color:#43B05C;">Лицензия</a> № 02.21.0020.М от 12.03.2021г., выданная Агентством Республики Казахстан по регулированию и развитию финансового рынка.</div>
-        <div class="row">Адрес: 050059, Казахстан, г. Алматы, пр. Аль-Фараби, д.19, н.п. 29а</div>        
-        <div class="row"><p>ТОО «МФО «Akshabar» использует Сookie (файлы с данными о прошлых посещениях сайта) для персонализации сервисов и удобства пользователей. Оставаясь на сайте вы даете <a href="/page/soglashenie" style="color: grey">согласие на обработку  данных</a></p></div>
-        <div class="row">Подробную информацию по правам потребителей финансовых услуг можно получить на сайтах Агентства РК по регулированию и развитию финансового рынка <a href="https://finreg.kz/" rel="noreferrer noopener" target="_blank">https://finreg.kz/</a> и <a href="https://fingramota.kz/ru" rel="noreferrer noopener" target="_blank">https://fingramota.kz/ru</a></div>
+        <div class="row justify">©2021 4slovo.kz - ТОО МФО «Akshabar»<br> с товарным знаком «Честное слово».<br> Все права защищены.</div>
+        <div class="row justify"><a href="/license/" style="text-decoration:none;color:#43B05C;">Лицензия</a> № 02.21.0020.М от 12.03.2021г., выданная Агентством Республики Казахстан по регулированию и развитию финансового рынка.</div>
+        <div class="row justify">Адрес: 050059, Казахстан, г. Алматы, пр. Аль-Фараби, д.19, н.п. 29а</div>        
+        <div class="row justify"><p>ТОО «МФО «Akshabar» использует Сookie (файлы с данными о прошлых посещениях сайта) для персонализации сервисов и удобства пользователей. Оставаясь на сайте вы даете <a href="/page/soglashenie">согласие на обработку  данных</a></p></div>
+        <div class="row justify">Подробную информацию по правам потребителей финансовых услуг можно получить на сайтах Агентства РК по регулированию и развитию финансового рынка <a href="https://finreg.kz/" rel="noreferrer noopener" target="_blank">https://finreg.kz/</a> и <a href="https://fingramota.kz/ru" rel="noreferrer noopener" target="_blank">https://fingramota.kz/ru</a></div>
         <div style="height:10px;"></div>        
     </div>
 </div>

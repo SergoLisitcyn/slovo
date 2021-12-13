@@ -11,5 +11,18 @@
     .mobile_content {
         display: block;
     }
+
+    ul.mobile__nav-top li {
+        list-style: none;
+        width: 100%;
+        color: black;
+        height: 50px;
+        background: #81c38b;
+        margin-bottom: 0px;
+    }
+
+    ul.mobile__nav-top li a {
+        border-bottom: none;
+    }
 }
   

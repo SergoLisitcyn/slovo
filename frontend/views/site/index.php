@@ -224,13 +224,9 @@ $this->registerJsFile(Yii::getAlias('@web') . 'js_register/slider.js', [
                 <span>Как это работает</span>
             </h2>
             <ul class="how-its-done">
-                <li><img alt="" src="images/big-icon-a.png" /><strong>Оформите заявку</strong> на микрокредит<br />&nbsp;</li>
-                <li><img alt="" src="images/big-icon-b.png" /><strong>Заявка рассматривается</strong> всего за пять минут<br />&nbsp;</li>
-                <li><img alt="" src="images/big-icon-c.png" /><strong>Моментально</strong> деньги поступают на счёт<br />
-                    <a href="/page/usloviya">
-                        Узнать подробнее об условиях
-                    </a>
-                </li>
+                <li><img alt="" src="images/big-icon-a.png" /><strong>Оформите заявку</strong> на микрокредит</li>
+                <li><img alt="" src="images/big-icon-b.png" /><strong>Заявка рассматривается</strong> всего за пять минут</li>
+                <li><img alt="" src="images/big-icon-c.png" /><strong>Моментально</strong> деньги поступают на счёт</li>
                 <li class="filler"></li>
             </ul>
             <?= Review::widget() ?>
@@ -362,7 +358,7 @@ $this->registerJsFile(Yii::getAlias('@web') . 'js_register/slider.js', [
                         pluralizeRu("день","дня","дней") }}
                     </div>
                 </template>
-                <div class="text text--margin_bottom_16"></div>
+                <div class="text text--margin_bottom_32"></div>
                 <div class="text text--center text--margin_bottom">
                     <template>
                         К возврату
@@ -380,7 +376,7 @@ $this->registerJsFile(Yii::getAlias('@web') . 'js_register/slider.js', [
                             id="mobile-submit"
                             value="Получить деньги онлайн"
                             class="big-button big-button-green"
-                            style="width:288px;"
+                            style="width:288px;font-family: 'PT Sans', 'Trebuchet MS', Helvetica, sans-serif;"
                     />
                 </div>
             </div>

@@ -8590,7 +8590,11 @@ ul.how-its-done2 img {
 }
 
 .footer .copy {
-    position: absolute; right: 0; top: 260px; text-align: right;
+    position: absolute;
+    right: 0;
+    top: 260px;
+    left: 0;
+    text-align: justify;
 }
 
 .footer .oferta-fin-regulator {
@@ -8598,13 +8602,15 @@ ul.how-its-done2 img {
     position: absolute;
     right: 0;
     top: 385px;
+    left: 0;
 }
 
 .footer .oferta-cookie {
     color: gray;
     position: absolute;
-    right: 7px;
+    right: 0px;
     top: 435px;
+    left: 0;
 }
 
 .footer-menu-wrapper {
@@ -8621,7 +8627,7 @@ ul.how-its-done2 img {
 .footer ul.menu li {
     list-style: none;
     display: inline-block;
-    margin: 0 0 0 18px;
+    margin: 0 0 0 1px;
     text-align: justify;
 }
 .footer ul.menu li a {

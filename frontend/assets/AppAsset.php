@@ -21,6 +21,7 @@ class AppAsset extends AssetBundle
         'css/mobile.slider.css', // для переопределения стилей из css_register
         'css_register/mobile.footer.css',
         'css_register/mobile.controlgroup.css',
+        'css/cookie.css',
         'css/desktop.css',
         'css/mobile.css'
     ];
@@ -31,7 +32,8 @@ class AppAsset extends AssetBundle
         'js_register/mobile_menu_slide.js',
         'js_register/bootstrap.min.js',
         'js_register/syncStateManager.js',
-        'js_register/modal.js'
+        'js_register/modal.js',
+        'js/cookie.js'
 //        'js/minified.css',
 //        'css/notification-banner.css',
     ];
