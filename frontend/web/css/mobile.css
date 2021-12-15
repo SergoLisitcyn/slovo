@@ -20,7 +20,10 @@
     width: 268px;
 }
 .mobile__footer > div.row.justify {
+    width: inherit;
     text-align: justify;
+    padding-right: 26px;
+    padding-left: 26px;
 }
 
 .mobile__footer ol, .mobile__footer ul {
