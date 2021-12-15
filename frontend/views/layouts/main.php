@@ -285,10 +285,10 @@ AppAsset::register($this);
                 <a href="https://www.instagram.com/4slovo_kz/?utm_source=4slovo_main" aria-label="instagram"><i class="custom-icon-inst-bottom"></i></a>
             </div>
         </div>        
-        <div class="row justify">©2021 4slovo.kz - ТОО МФО «Akshabar»<br> с товарным знаком «Честное слово».<br> Все права защищены.</div>
+        <div class="row justify">©2021 4slovo.kz - ТОО МФО «Akshabar» с товарным знаком «Честное слово». Все права защищены.</div>
         <div class="row justify"><a href="/license/" style="text-decoration:none;color:#43B05C;">Лицензия</a> № 02.21.0020.М от 12.03.2021г., выданная Агентством Республики Казахстан по регулированию и развитию финансового рынка.</div>
         <div class="row justify">Адрес: 050059, Казахстан, г. Алматы, пр. Аль-Фараби, д.19, н.п. 29а</div>        
-        <div class="row justify"><p>ТОО «МФО «Akshabar» использует Сookie (файлы с данными о прошлых посещениях сайта) для персонализации сервисов и удобства пользователей. Оставаясь на сайте вы даете <a href="/page/soglashenie">согласие на обработку  данных</a></p></div>
+        <div class="row justify"><p>ТОО «МФО «Akshabar» использует Сookie (файлы с данными о прошлых посещениях сайта) для персонализации сервисов и удобства пользователей. Оставаясь на сайте, вы даете <a href="/page/soglashenie">согласие на обработку  данных</a></p></div>
         <div class="row justify">Подробную информацию по правам потребителей финансовых услуг можно получить на сайтах Агентства РК по регулированию и развитию финансового рынка <a href="https://finreg.kz/" rel="noreferrer noopener" target="_blank">https://finreg.kz/</a> и <a href="https://fingramota.kz/ru" rel="noreferrer noopener" target="_blank">https://fingramota.kz/ru</a></div>
         <div style="height:10px;"></div>        
     </div>
